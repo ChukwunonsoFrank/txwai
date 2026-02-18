@@ -45,7 +45,7 @@ class CheckBannedUser
         ->route("login")
         ->with(
           "error",
-          "Your account has been banned. Contact support at info@txwai.com",
+          "Your account has been banned. Contact support at support@txwai.com",
         );
     }
 

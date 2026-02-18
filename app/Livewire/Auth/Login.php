@@ -61,7 +61,7 @@ class Login extends Component
       if ($user["is_banned"]) {
         $this->dispatch(
           "login-error",
-          message: "Your account has been banned. Reach out to support at info@txwai.com.",
+          message: "Your account has been banned. Reach out to support at support@txwai.com.",
         )->self();
         return;
       }

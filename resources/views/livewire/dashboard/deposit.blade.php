@@ -409,7 +409,7 @@
                 if (wire.isBanned) {
                     this.isPaymentMethodSelectVisible = false;
                     let message =
-                        'Your account has been banned. Reach out to support at info@txwai.com.';
+                        'Your account has been banned. Reach out to support at support@txwai.com.';
                     toast('deposit-error', message);
                     return;
                 }

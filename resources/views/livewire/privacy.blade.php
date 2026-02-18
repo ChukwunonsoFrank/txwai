@@ -373,7 +373,7 @@
             additionally within reasonable time via email provided by you for the case or as your contact email.</p>
 
         <p class="font-medium text-md text-white"><b>9.2</b> If you require any additional information or have any
-            further questions concerning this Privacy Policy, please contact us at info@txwai.com.</p>
+            further questions concerning this Privacy Policy, please contact us at support@txwai.com.</p>
 
     </div>
 </div>

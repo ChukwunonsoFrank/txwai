@@ -15,7 +15,7 @@
             Txwai Robot (the Company or we) to any individual who uses the Services (you).</p>
 
         <p class="font-medium text-md text-white"><b>1.2</b> If you have any questions regarding these Terms or about
-            the Company, please contact us by email at info@txwai.com.</p>
+            the Company, please contact us by email at support@txwai.com.</p>
 
         <!-- 2. Acceptance -->
         <h1 class="text-white text-2xl my-6 font-medium tracking-tight"
@@ -175,7 +175,7 @@
         <p class="font-medium text-md text-white mb-4"><b>6.9</b> We respect the intellectual property rights of
             others. We will respond expeditiously to claims of copyright infringement. If you see any material within
             our Services that in your good faith belief may infringe someone’s copyright, you may notify us by emailing
-            us at info@txwai.com with “Copyright” in the subject line.</p>
+            us at support@txwai.com with “Copyright” in the subject line.</p>
 
         <p class="font-medium text-md text-white"><b>7.0</b> The Minimal and Conservative strategy is limited on
             trades and withdrawals.</p>

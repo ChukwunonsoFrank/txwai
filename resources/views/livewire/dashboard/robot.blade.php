@@ -872,7 +872,7 @@
             toggleStartRobotConfirmationModal(wire) {
                 if (wire.isBanned) {
                     toastRobotError(
-                        'Your account has been banned. Reach out to support at info@txwai.com.'
+                        'Your account has been banned. Reach out to support at support@txwai.com.'
                     );
                     return;
                 }
