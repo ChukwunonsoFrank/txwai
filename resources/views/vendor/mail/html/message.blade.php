@@ -21,11 +21,11 @@
 {{-- Footer --}}
 <x-slot:footer>
 <x-mail::footer>
-{{ __('Txwai is a trademark of Txwai Inc with the registered address at') }} <a href="" target="_blank" rel="noopener noreferrer">127, Grinzinger Street, 1130 Vienna, Austria.</a>
+{{ __('Txwai is a trademark of Txwai Inc with the registered address at') }} <a href="" target="_blank" rel="noopener noreferrer">Provincial House, New Walk, Leicester, United Kingdom, LE1 6TU</a>
 <br><br>
 © {{ date('Y') }} {{ config('app.name') }} Inc. {{ __('All rights reserved.') }}
 <br><br>
-<a href="https://txwai.com" target="_blank" rel="noopener noreferrer">www.txwai.com</a> | <a href="mailto:support@txwai.com">support@txwai.com></a>
+<a href="https://txwai.com" target="_blank" rel="noopener noreferrer">www.txwai.com</a> | <a href="mailto:support@txwai.com">support@txwai.com</a>
 </x-mail::footer>
 </x-slot:footer>
 </x-mail::layout>

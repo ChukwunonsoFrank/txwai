@@ -174,8 +174,8 @@
                     </div>
                 </div>
                 <div class="col-12 mt-4">
-                    <p class="mb-4" style="font-size: 12px;"><i class="bi bi-geo-alt-fill"></i> 127, Grinzinger
-                        Street, 1130 Vienna, Austria.</p>
+                    <p class="mb-4" style="font-size: 12px;"><i class="bi bi-geo-alt-fill"></i> Provincial House,
+                        New Walk, Leicester, United Kingdom, LE1 6TU</p>
                     <p style="font-size: 12px;">Copyright © {{ now()->year }} Txwai, Inc.</p>
                 </div>
             </div>

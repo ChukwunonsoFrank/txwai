@@ -16,7 +16,7 @@
                                 d="M8.714 14h-3.71a1 1 0 0 0-.948.683l-2.004 6A1 1 0 0 0 3 22h18a1 1 0 0 0 .948-1.316l-2-6a1 1 0 0 0-.949-.684h-3.712" />
                         </svg>
                         <a href="#" class="text-white fw-bold text-decoration-underline" style="font-size: 14px;">
-                            127 Boulevard De La Pétrusse, L-2320, Luxembourg.
+                            Provincial House, New Walk, Leicester, United Kingdom, LE1 6TU
                         </a>
                     </div>
 
