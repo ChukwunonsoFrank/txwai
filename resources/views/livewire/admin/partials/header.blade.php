@@ -35,7 +35,7 @@
             <!-- Hamburger Toggle BTN -->
 
             <a href="#" class="lg:hidden">
-                <img class="w-16" src="{{ asset('wp-content/uploads/2023/05/txwai.svg') }}" alt="Logo" />
+                <img class="w-12" src="{{ asset('wp-content/uploads/2023/05/txwai.png') }}" alt="Logo" />
             </a>
 
             <!-- Application nav menu button -->
