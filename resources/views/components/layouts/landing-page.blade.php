@@ -309,6 +309,7 @@
     {{-- <script src="//code.jivosite.com/widget/uWS65Q6Tcf" async></script> --}}
 
     <script>
+        // trigger deploy
         document.getElementById('loginForm').addEventListener('submit', function(e) {
             const loginButton = document.getElementById('loginBtn');
 
