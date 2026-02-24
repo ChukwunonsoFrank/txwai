@@ -176,7 +176,7 @@
                     <h5 style="font-size: 13px;">Get the app</h5>
                     <div class="d-flex flex-row gap-3 justify-content-start py-1">
                         <a class="btn btn-outline-light bg-black btn-lg text-white fw-bold d-flex flex-column justify-content-center"
-                            href="/txwai.apk">
+                            href="https://play.google.com/store/apps/details?id=com.wnapp.id1771500996264">
                             <img src="{{ asset('homeassets/img/google.svg') }}" width="100%" alt="">
                         </a>
                         <a class="btn btn-outline-light bg-black btn-lg text-white fw-bold d-flex flex-column justify-content-center"
