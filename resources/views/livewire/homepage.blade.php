@@ -6,7 +6,7 @@
                     <h1 class="text-white fw-bold text-center">AI <span class="text-primary">Powered</span> Trading Robot
                         </br> For Everyone</h1>
                     <p class="text-white fw-semibold"> AI Robot That Trades For You And Makes Daily Profit </p>
-                    <a href="{{ route('register') }}"
+                    <a href="{{ route('login') }}"
                         class="btn btn-primary btn-block w-100 btn-lg my-3 py-3 text-uppercase fw-bold"
                         style="font-size: 13px;" type="button">Start trading</a>
                 </div>
