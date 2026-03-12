@@ -200,13 +200,13 @@
                                 <div>
                                     <ul class="app-links">
                                         <a
-                                            href="https://play.google.com/store/apps/details?id=com.haryadewalayanankonstruksi&hl=en">
+                                            href="https://play.google.com/store/apps/details?id=com.wnapp.id1771500996264">
                                             <li class="playstore">
                                                 <div class="supertitle">Get it on</div>
                                                 <div class="title">Google Play</div>
                                             </li>
                                         </a>
-                                        <a href="https://apps.apple.com/ng/app/txwai/id6755783410">
+                                        <a href="https://txwai.com">
                                             <li class="appstore">
                                                 <div class="supertitle">Download on the</div>
                                                 <div class="title">App Store</div>
