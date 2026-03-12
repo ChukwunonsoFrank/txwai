@@ -1,357 +1,107 @@
 <div>
-    <section class="Hero bg-custom">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-6 mx-auto d-flex flex-column justify-content-center align-items-center">
-                    <h1 class="text-white fw-bold text-center">AI <span class="text-primary">Powered</span> Trading Robot
-                        </br> For Everyone</h1>
-                    <p class="text-white fw-semibold"> AI Robot That Trades For You And Makes Daily Profit </p>
-                    <a href="{{ route('login') }}"
-                        class="btn btn-primary btn-block w-100 btn-lg my-3 py-3 text-uppercase fw-bold"
-                        style="font-size: 13px;" type="button">Start trading</a>
-                </div>
-            </div>
+    <section id="home-section"
+        class="elementor-section elementor-top-section elementor-element elementor-element-5630b8c elementor-section-height-min-height tl-border-bottom tl-video-cover tl-section-dark elementor-section-content-bottom elementor-section-full_width elementor-section-items-bottom elementor-section-height-default"
+        data-id="5630b8c" data-element_type="section"
+        data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;\/wp-content\/uploads\/2025\/03\/tradelocker-main.mp4&quot;,&quot;background_video_start&quot;:0,&quot;background_play_on_mobile&quot;:&quot;yes&quot;}">
+        <div class="elementor-background-video-container">
+            <video class="elementor-background-video-hosted elementor-html5-video" autoplay muted playsinline
+                loop></video>
         </div>
-    </section>
-
-    <section class="inovation py-2 bg-custom">
-        <div class="container">
-            <div class="row gy-3 justify-content-center">
-                <div class="col-lg-2 col-6">
-                    <div class="inovation__wrap col-12">
-                        <img src="{{ asset('images/inovation/metatrader.svg') }}" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-2 col-6">
-                    <div class="inovation__wrap col-12">
-                        <img src="{{ asset('images/inovation/chatgpt.svg') }}" alt="">
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-6">
-                    <div class="inovation__wrap col-12">
-                        <img src="{{ asset('images/inovation/forex.svg') }}" alt="">
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-6">
-                    <div class="inovation__wrap col-12">
-                        <img src="{{ asset('images/inovation/tradingview.svg') }}" alt="">
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="inovation py-5 bg-light border">
-        <div class="container">
-            <div class="row gy-3">
-                <div class="col-lg-2 col-6">
-                    <div class="inovation__wrap col-12">
-                        <img src="{{ asset('images/award/benzinga.svg') }}" style="width: 120px;" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-2 col-6">
-                    <div class="inovation__wrap col-12">
-                        <img src="{{ asset('images/award/fx-trading.svg') }}" style="width: 120px;" alt="">
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-6">
-                    <div class="inovation__wrap col-12">
-                        <img src="{{ asset('images/award/invezz.svg') }}" style="width: 120px;" alt="">
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-6">
-                    <div class="inovation__wrap col-12">
-                        <img src="{{ asset('images/award/slash-dot.svg') }}" style="width: 80px;" alt="">
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-6">
-                    <div class="inovation__wrap col-12">
-                        <img src="{{ asset('images/award/source-forge.svg') }}" style="width: 80px;" alt=""
-                            width="100%">
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-6">
-                    <div class="inovation__wrap col-12">
-                        <img src="{{ asset('images/award/techopedia.svg') }}" style="width: 120px;" alt="">
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    {{-- <section class="testimonial py-5 bg-gray" id="testimonials">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-7">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide d-flex flex-column">
-                            <div class="img-container">
-                                <img src="{{ asset('images/testimonial/bharti.webp') }}" alt="" width="100%">
-                                <div class="img-caption d-flex flex-column justify-content-center text-start">
-                                    <p class="mb-0 fs-6">Trader</p>
-                                    <h6 class="mb-0">Wouter Benjins</h6>
-
+        <div class="elementor-background-overlay"></div>
+        <div class="elementor-container elementor-column-gap-default">
+            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-982ea91"
+                data-id="982ea91" data-element_type="column">
+                <div class="elementor-widget-wrap elementor-element-populated">
+                    <div class="elementor-element elementor-element-e85f413 elementor-widget elementor-widget-hero-block"
+                        data-id="e85f413" data-element_type="widget" data-widget_type="hero-block.default">
+                        <div class="elementor-widget-container">
+                            <div class="hero-container hero-height">
+                                <div class="title-block text-left flex-wrap justify-start" style="text-align:left">
+                                    <h1 class="title-block_child">AI Powered Trading Robot For Everyone</h1>
+                                    <h4 class="title-block_child">AI Robot That Trades For You And <a
+                                            href="{{ route('home') }}" style="font:inherit;letter-spacing:inherit">Makes
+                                            Daily Profit</a>.</h4>
+                                    <!-- Refactored Button Rendering -->
+                                    <div class="button-wrapper title-block_child justify-start">
+                                        <a href="{{ route('register') }}">
+                                            <button class="btn-platform">
+                                                Start trading </button>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div class="swipe-text bg-new w-100 text-start p-2">
-                                <p class="mb-0 fw-bold fs-6">Monthly Gain</p>
-                                <h1 class="mt-0 fw-bold">25%</h1>
-                            </div>
-                        </div>
-                        <div class="swiper-slide d-flex flex-column">
-                            <div class="img-container">
-                                <img src="{{ asset('images/testimonial/bijnens.webp') }}" alt="" width="100%">
-                                <div class="img-caption d-flex flex-column justify-content-center text-start">
-                                    <p class="mb-0 fs-6">Trader</p>
-                                    <h6 class="mb-0">Wouter Benjins</h6>
-
+                                <div class="flex justify-between tabs-container">
+                                    <div class="title-block_child tabs-item">
+                                        <div class="tab-header grid">
+                                            <h4 class="tab-number">
+                                                <div>001</div>
+                                            </h4>
+                                            <div class="tab-icon"><svg width="16" height="16" viewBox="0 0 16 16"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect x="5" y="5" width="6.00027" height="6.00027" fill="white" />
+                                                    <rect x="0.363636" y="0.363636" width="15.2727" height="15.2727"
+                                                        stroke="white" stroke-width="0.727273" />
+                                                </svg>
+                                            </div>
+                                            <h4 class="tab-title">Create an Account</h4>
+                                        </div>
+                                        <h4 class="tab-link"><a aria-label="Go to https://tradelocker.com/hub"
+                                                href="{{ route('register') }}" class="start-here">Start now</a>
+                                        </h4>
+                                    </div>
+                                    <div class="title-block_child tabs-item">
+                                        <div class="tab-header grid">
+                                            <h4 class="tab-number">
+                                                <div>002</div>
+                                            </h4>
+                                            <div class="tab-icon"><svg width="16" height="16" viewBox="0 0 16 16"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect x="5" y="5" width="6.00027" height="6.00027" fill="white" />
+                                                    <rect x="0.363636" y="0.363636" width="15.2727" height="15.2727"
+                                                        stroke="white" stroke-width="0.727273" />
+                                                </svg>
+                                            </div>
+                                            <h4 class="tab-title">Start Robot</h4>
+                                        </div>
+                                        <h4 class="tab-link"><a aria-label="Go to /retail-trading"
+                                                href="{{ route('register') }}" class="start-here">Start now</a></h4>
+                                    </div>
+                                    <div class="title-block_child tabs-item">
+                                        <div class="tab-header grid">
+                                            <h4 class="tab-number">
+                                                <div>003</div>
+                                            </h4>
+                                            <div class="tab-icon"><svg width="16" height="16" viewBox="0 0 16 16"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect x="5" y="5" width="6.00027" height="6.00027" fill="white" />
+                                                    <rect x="0.363636" y="0.363636" width="15.2727" height="15.2727"
+                                                        stroke="white" stroke-width="0.727273" />
+                                                </svg>
+                                            </div>
+                                            <h4 class="tab-title">Let the AI Trade</h4>
+                                        </div>
+                                        <h4 class="tab-link"><a aria-label="Go to /studio"
+                                                href="{{ route('register') }}" class="start-here">Start now</a></h4>
+                                    </div>
+                                    <div class="title-block_child tabs-item">
+                                        <div class="tab-header grid">
+                                            <h4 class="tab-number">
+                                                <div>004</div>
+                                            </h4>
+                                            <div class="tab-icon"><svg width="16" height="16" viewBox="0 0 16 16"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect x="5" y="5" width="6.00027" height="6.00027"
+                                                        fill="white" />
+                                                    <rect x="0.363636" y="0.363636" width="15.2727" height="15.2727"
+                                                        stroke="white" stroke-width="0.727273" />
+                                                </svg>
+                                            </div>
+                                            <h4 class="tab-title">Withdraw Anytime</h4>
+                                        </div>
+                                        <h4 class="tab-link"><a aria-label="Go to /integrate-tradelocker"
+                                                href="{{ route('register') }}" class="start-here">Start
+                                                now</a></h4>
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div class="swipe-text bg-new w-100 text-start p-2">
-                                <p class="mb-0 fw-bold fs-6">Monthly Gain</p>
-                                <h1 class="mt-0 fw-bold">25%</h1>
-                            </div>
-                        </div>
-                        <div class="swiper-slide d-flex flex-column">
-                            <div class="img-container">
-                                <img src="{{ asset('images/testimonial/jca.webp') }}" alt="" width="100%">
-                                <div class="img-caption d-flex flex-column justify-content-center text-start">
-                                    <p class="mb-0 fs-6">Trader</p>
-                                    <h6 class="mb-0">Wouter Benjins</h6>
-
-                                </div>
-                            </div>
-                            <div class="swipe-text bg-new w-100 text-start p-2">
-                                <p class="mb-0 fw-bold fs-6">Monthly Gain</p>
-                                <h1 class="mt-0 fw-bold">25%</h1>
-                            </div>
-                        </div>
-                        <div class="swiper-slide d-flex flex-column">
-                            <div class="img-container">
-                                <img src="{{ asset('images/testimonial/lisa.webp') }}" alt="" width="100%">
-                                <div class="img-caption d-flex flex-column justify-content-center text-start">
-                                    <p class="mb-0 fs-6">Trader</p>
-                                    <h6 class="mb-0">Wouter Benjins</h6>
-
-                                </div>
-                            </div>
-                            <div class="swipe-text bg-new w-100 text-start p-2">
-                                <p class="mb-0 fw-bold fs-6">Monthly Gain</p>
-                                <h1 class="mt-0 fw-bold">25%</h1>
-                            </div>
-                        </div>
-                        <div class="swiper-slide d-flex flex-column">
-                            <div class="img-container">
-                                <img src="{{ asset('images/testimonial/petko.webp') }}" alt="" width="100%">
-                                <div class="img-caption d-flex flex-column justify-content-center text-start">
-                                    <p class="mb-0 fs-6">Trader</p>
-                                    <h6 class="mb-0">Wouter Benjins</h6>
-
-                                </div>
-                            </div>
-                            <div class="swipe-text bg-new w-100 text-start p-2">
-                                <p class="mb-0 fw-bold fs-6">Monthly Gain</p>
-                                <h1 class="mt-0 fw-bold">25%</h1>
-                            </div>
-                        </div>
-                        <div class="swiper-slide d-flex flex-column">
-                            <div class="img-container">
-                                <img src="{{ asset('images/testimonial/savell.webp') }}" alt="" width="100%">
-                                <div class="img-caption d-flex flex-column justify-content-center text-start">
-                                    <p class="mb-0 fs-6">Trader</p>
-                                    <h6 class="mb-0">Wouter Benjins</h6>
-
-                                </div>
-                            </div>
-                            <div class="swipe-text bg-new w-100 text-start p-2">
-                                <p class="mb-0 fw-bold fs-6">Monthly Gain</p>
-                                <h1 class="mt-0 fw-bold">25%</h1>
-                            </div>
-                        </div>
-                        <div class="swiper-slide d-flex flex-column">
-                            <div class="img-container">
-                                <img src="{{ asset('images/testimonial/siu.webp') }}" alt="" width="100%">
-                                <div class="img-caption d-flex flex-column justify-content-center text-start">
-                                    <p class="mb-0 fs-6">Trader</p>
-                                    <h6 class="mb-0">Wouter Benjins</h6>
-
-                                </div>
-                            </div>
-                            <div class="swipe-text bg-new w-100 text-start p-2">
-                                <p class="mb-0 fw-bold fs-6">Monthly Gain</p>
-                                <h1 class="mt-0 fw-bold">25%</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
-            <div class="col-lg-5 d-flex flex-column justify-content-center">
-                <h1 class="text-black text-start fs-1">Proven By Real Success Stories, Backed By Experts</h1>
-                <p>Elevate your trading with established Expert Advisors, renowned for their countless verified 5-star
-                    reviews and authentic client testimonials. By placing your trust in an award-winning industry leader
-                    endorsed by field experts, you’ll experience a world where excellence is not just promised but
-                    consistently demonstrated.</p>
-                <a href="{{ route('login') }}" class="btn btn-primary btn-lg w-50 my-3 fw-bold" type="button"> Start
-                    Trading</a>
-            </div>
-        </div>
-    </div>
-</section> --}}
-
-    <section class="inovation py-5 bg-custom" id="about">
-        <div class="container">
-            <div class="row py-4">
-                <div class="col-12">
-                    <h1 class="text-white text-center fs-1" style="line-height: 32px;">Lead the way in trading
-                        innovation
-                    </h1>
-                </div>
-            </div>
-            <div class="row gy-3 justify-content-center">
-                <div class="col-lg-2 col-6">
-                    <div class="inovation__wrap col-12">
-                        <img src="{{ asset('images/inovation/metatrader.svg') }}" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-2 col-6">
-                    <div class="inovation__wrap col-12">
-                        <img src="{{ asset('images/inovation/chatgpt.svg') }}" alt="">
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-6">
-                    <div class="inovation__wrap col-12">
-                        <img src="{{ asset('images/inovation/forex.svg') }}" alt="">
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-6">
-                    <div class="inovation__wrap col-12">
-                        <img src="{{ asset('images/inovation/tradingview.svg') }}" alt="">
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="what-about py-5" id="features">
-        <div class="container">
-            <div class="row py-4">
-                <div class="col-12">
-                    <h1 class="text-black text-center fs-1">What this means to you</h1>
-                </div>
-            </div>
-            <div class="row gy-3">
-                <div class="col-lg-4 col-12">
-                    <div class="what-about__wrap col-12">
-                        <div class="d-flex flex-row justify-content-start gap-2">
-                            <img src="{{ asset('images/peace.svg') }}" alt="">
-                            <div class="d-flex flex-column">
-                                <h5>Peace of Mind</h5>
-                                <p class="text-white">
-                                    At Txwai, we prioritize your peace of mind above all. Our commitment to providing a
-                                    secure, transparent, and reliable trading experience ensures that you maximize
-                                    profits and funds secured.We employ cutting-edge security measures to protect your
-                                    data, and our team is always available to provide clear communication and responsive
-                                    support.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-4 col-12">
-                    <div class="what-about__wrap col-12">
-                        <div class="d-flex flex-row justify-content-start gap-2">
-                            <img src="{{ asset('images/reliable.svg') }}" alt="">
-                            <div class="d-flex flex-column">
-                                <h5>Guaranteed Reliability</h5>
-                                <p class="text-white">
-                                    You'll rely on our several years-long, proven track records on live accounts,
-                                    validating
-                                    your investment decisions with real performance data and not just claims. With a
-                                    100% guarantee and security on funds. Having acccess to withdraw our funds anytime
-                                    without hassle.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-12">
-                    <div class="what-about__wrap col-12">
-                        <div class="d-flex flex-row justify-content-start gap-2">
-                            <img src="{{ asset('images/proven.svg') }}" alt="">
-                            <div class="d-flex flex-column">
-                                <h5>Proven Transparency</h5>
-                                <p class="text-white">
-                                    You'll experience reassurance through hundreds of verified 5-star reviews and video
-                                    testimonials, demonstrating how you too can achieve your trading goals. With so many
-                                    certications and affiliations with top trading bodies, be rest assured that our
-                                    transperency is 100%.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-12">
-                    <div class="what-about__wrap col-12">
-                        <div class="d-flex flex-row justify-content-start gap-2">
-                            <img src="{{ asset('images/longterm.svg') }}" alt="">
-                            <div class="d-flex flex-column">
-                                <h5>Trading made Easy for you</h5>
-                                <p class="text-white">
-                                    Quick and easy setup for both new and experience traders, very easy to start the
-                                    robot. $10,000 on Demo account to try out the robot and see how it works.Flexible
-                                    use of robot, you can choose to stop the robot anytime, your capital is always
-                                    returned after every trade. You don't need to be on the page for the robot to trade
-                                    for you. It trades even when you're offline.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-12">
-                    <div class="what-about__wrap col-12">
-                        <div class="d-flex flex-row justify-content-start gap-2">
-                            <img src="{{ asset('images/informed.svg') }}" alt="">
-                            <div class="d-flex flex-column">
-                                <h5>Fully Powered by Ai</h5>
-                                <p class="text-white">
-                                    Txwai robot uses Artificial Intelligence to trade the market with the best algorithm
-                                    to minimize risk and maximize profits.No risk involved, why? This is because the
-                                    robot closes and opens positions in Milliseconds, trades are not manually placed,
-                                    the Ai handles all trades automatically.No skills required, you do not need any
-                                    trading skill to use the Txwai robot, it’s easy to use and it lets your money work
-                                    for you.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-12">
-                    <div class="what-about__wrap col-12">
-                        <div class="d-flex flex-row justify-content-start gap-2">
-                            <img src="{{ asset('images/market-cycle.svg') }}" alt="">
-                            <div class="d-flex flex-column">
-                                <h5>Profitable Service</h5>
-                                <p class="text-white">
-                                    Our primary focus is ensuring that your trading experience is not only efficient but
-                                    also highly profitable. Our AI-powered trading algorithms are built to maximize
-                                    potential gains and help you achieve financial goals, and adapt to market changes in
-                                    real time Your financial information and account details are securely stored and
-                                    encrypted.The Txwai robot is profitable for everyone whereby your money works for
-                                    you
-                                    on a daily basis with our fully automated trading robot..</p>
                             </div>
                         </div>
                     </div>
@@ -360,301 +110,885 @@
         </div>
     </section>
 
-    <section class="Bottom-Hero bg-custom">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 mx-auto d-flex flex-column justify-content-center align-items-center">
-                    <h1 class="text-white fw-bold">AI Powered Trading Robot For Everyone</h1>
-                    <a href="{{ route('login') }}"
-                        class="btn btn-primary btn-lg w-100 my-4 fw-bold text-uppercase py-3" style="font-size: 13px;"
-                        type="button"> Start
-                        Trading</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <section id="features-section"
+        class="elementor-section elementor-top-section elementor-element elementor-element-48c09f1 tl-section-border tl-section-border-top no-inner-borders elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+        data-id="48c09f1" data-element_type="section"
+        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div class="elementor-container elementor-column-gap-default">
+            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-19eeb6b"
+                data-id="19eeb6b" data-element_type="column">
+                <div class="elementor-widget-wrap elementor-element-populated">
+                    <section
+                        class="elementor-section elementor-inner-section elementor-element elementor-element-3ae5ecd elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                        data-id="3ae5ecd" data-element_type="section">
+                        <div class="elementor-container elementor-column-gap-default">
+                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-2d03aa1"
+                                data-id="2d03aa1" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div class="elementor-element elementor-element-7a5c00b elementor-widget elementor-widget-main-block"
+                                        data-id="7a5c00b" data-element_type="widget"
+                                        data-widget_type="main-block.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="main-block text-left flex-wrap justify-start"
+                                                style="text-align:left">
+                                                <div class="main-block_child main-block_eyebrow"><img decoding="async"
+                                                        width="24" height="auto"
+                                                        src="wp-content/uploads/2025/03/plaform.svg">
+                                                </div>
+                                                <h2 class="main-block_child"><span
+                                                        style="color: #1f4ed8;">AI-Powered</span> Scalping Technology
+                                                </h2>
+                                                <p class="main-block_child">Txwai uses a cutting-edge AI scalping
+                                                    strategy that opens and closes trades in seconds.</p>
+                                                <!-- Refactored Button Rendering -->
+                                                <div class="button-wrapper main-block_child justify-start">
 
-    <section class="py-5 bg-light border" id="tutorial">
-        <div class="container">
-            <div class="row justify-content-center text-center mb-4">
-                <div class="col-lg-8 col-xxl-7">
-                    <h1 class="display-5 fw-bold fs-1 text-black">How to get started</h1>
-                    <p class="lead">Here's your easy to follow trading plan:</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="text-center position-relative">
-                        <div class="step-icon mx-auto border rounded-circle d-flex align-items-center justify-content-center"
-                            style="width:70px;height:70px;background-color:#1F4ED8;">
-                            <i class="bi bi-currency-dollar text-white" style="font-size: 32px;"></i>
+                                                    <a href="{{ route('register') }}">
+                                                        <button class="btn-platform">
+                                                            Start trading </button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-ed35d4f"
+                                data-id="ed35d4f" data-element_type="column">
+                                <div class="elementor-widget-wrap">
+                                </div>
+                            </div>
                         </div>
-                        <p class="lead text-uppercase text-black mt-4 px-lg-3 mb-1 fw-semibold"
-                            style="font-size: 14px;">
-                            Step 1</p>
-                        <h4 class="mt-3 fs-5 fw-semibold">Enter your desired trade amount</h4>
-                        <p class="lead text-muted mt-4 px-lg-3 mb-5 mb-lg-0" style="font-size: 14px;">This will depend
-                            on
-                            the minimum trading amount of your selected trading strategy</p>
-                        <div class="arrow-icon position-absolute d-none d-lg-block" style="top:50px; right:-25px">
-                            <svg class="bi bi-arrow-right" fill="currentColor" height="30" viewbox="0 0 16 16"
-                                width="30" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                                    fill-rule="evenodd"></path>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="text-center position-relative">
-                        <div class="step-icon mx-auto border rounded-circle d-flex align-items-center justify-content-center"
-                            style="width: 70px;height: 70px;background-color:#1F4ED8;">
-                            <i class="bi bi-person-circle text-white" style="font-size: 32px;"></i>
-                        </div>
-                        <p class="lead text-uppercase text-black mt-4 px-lg-3 mb-1 fw-semibold"
-                            style="font-size: 14px;">
-                            Step 2</p>
-                        <h4 class="mt-3 fs-5 fw-semibold">Pick a trading account</h4>
-                        <p class="lead text-muted mt-4 px-lg-3 mb-5 mb-lg-0" style="font-size: 14px;">You can either
-                            practice using the Demo account and graduate to the Real account when ready</p>
-                        <div class="arrow-icon position-absolute d-none d-lg-block" style="top:50px; right:-25px">
-                            <svg class="bi bi-arrow-right" fill="currentColor" height="30" viewbox="0 0 16 16"
-                                width="30" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                                    fill-rule="evenodd"></path>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="text-center position-relative">
-                        <div class="step-icon mx-auto border rounded-circle d-flex align-items-center justify-content-center"
-                            style="width: 70px;height: 70px;background-color:#1F4ED8;">
-                            <i class="bi bi-speedometer2 text-white" style="font-size: 32px;"></i>
-                        </div>
-                        <p class="lead text-uppercase text-black mt-4 px-lg-3 mb-1 fw-semibold"
-                            style="font-size: 14px;">
-                            Step 3</p>
-                        <h4 class="mt-3 fs-5 fw-semibold">Select a trading strategy</h4>
-                        <p class="lead text-muted mt-4 px-lg-3 mb-5 mb-lg-0" style="font-size: 14px;">Select a list of
-                            predefined strategies designed to maximize your trading capacity and profits</p>
-                        <div class="arrow-icon position-absolute d-none d-lg-block" style="top:50px; right:-25px">
-                            <svg class="bi bi-arrow-right" fill="currentColor" height="30" viewbox="0 0 16 16"
-                                width="30" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                                    fill-rule="evenodd"></path>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="text-center position-relative">
-                        <div class="step-icon mx-auto border rounded-circle d-flex align-items-center justify-content-center"
-                            style="width: 70px;height: 70px;background-color:#1F4ED8;">
-                            <i class="bi bi-graph-up-arrow text-white" style="font-size: 32px;"></i>
-                        </div>
-                        <p class="lead text-uppercase text-black mt-4 px-lg-3 mb-1 fw-semibold"
-                            style="font-size: 14px;">
-                            Step 4</p>
-                        <h4 class="mt-3 fs-5 fw-semibold">Start trading</h4>
-                        <p class="lead text-muted mt-4 px-lg-3 mb-5 mb-lg-0" style="font-size: 14px;">Click on the
-                            Start
-                            Trade button and let the bot trade for you</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-5" id="faq">
-        <div class="container">
-            <div class="row justify-content-center text-center mb-3">
-                <div class="col-lg-8 col-xl-7">
-                    <h1 class="display-5 fw-bold fs-1">FAQs</h1>
-                </div>
-            </div>
-            <div class="row justify-content-center py-lg-3">
-                <div class="col-md-10">
-                    <div class="row justify-content-center mb-4">
-                        <div class="col-lg-8">
-                            <div class="accordion" id="Tech-accordion">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="Tech-headingOne"><button
-                                            aria-controls="Tech-collapseOne" aria-expanded="false"
-                                            class="fw-semibold accordion-button collapsed"
-                                            data-bs-target="#Tech-collapseOne" style="font-size: 20px;"
-                                            data-bs-toggle="collapse" type="button">
-                                            How does Txwai works?</button></h2>
-                                    <div aria-labelledby="Tech-headingOne" class="accordion-collapse collapse"
-                                        data-bs-parent="#Tech-accordion" id="Tech-collapseOne">
-                                        <div class="accordion-body" style="font-size: 14px;">
-                                            Txwai is an automated Ai trading bot that helps you trade the forex and
-                                            crypto
-                                            market easily with a proven scalping strategy powered by a strong algorithm
-                                            that
-                                            trades the market, opens and closes trades within seconds targeting profits
-                                            per
-                                            trade which in end accumulates profits gradually. All you need to do is
-                                            create
-                                            an account, start a trade on demo to see how it works, then fund your
-                                            account to
-                                            make real profits.
+                    </section>
+                    <section
+                        class="elementor-section elementor-inner-section elementor-element elementor-element-65416b8 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                        data-id="65416b8" data-element_type="section">
+                        <div class="elementor-container elementor-column-gap-default">
+                            <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-674d720"
+                                data-id="674d720" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div class="elementor-element elementor-element-ac14913 elementor-widget__width-initial elementor-hidden-mobile elementor-widget elementor-widget-mockup-block"
+                                        data-id="ac14913" data-element_type="widget"
+                                        data-widget_type="mockup-block.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="mockup-block flex justify-center">
+                                                <img width="400" decoding="async" loading="lazy"
+                                                    class="mockup_screenshot centerX-absolute"
+                                                    src="wp-content/uploads/2025/03/Screenshot-2025-03-26-at-15.48.10.png">
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="Tech-headingThree"><button
-                                            aria-controls="Tech-collapseThree" aria-expanded="false"
-                                            class="fw-semibold accordion-button collapsed"
-                                            data-bs-target="#Tech-collapseThree" style="font-size: 20px;"
-                                            data-bs-toggle="collapse" type="button">
-                                            Do I need trading skills to earn?</button></h2>
-                                    <div aria-labelledby="Tech-headingThree" class="accordion-collapse collapse"
-                                        data-bs-parent="#Tech-accordion" id="Tech-collapseThree">
-                                        <div class="accordion-body" style="font-size: 14px;">
-                                            No, you don't need any trading skills to profit from this, you can earn from
-                                            Txwai with zero knowledge in trading. The Ai bot handles all the trades for
-                                            you
-                                            and make profits, all you need to do is start the robot.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="Tech-headingFour"><button
-                                            aria-controls="Tech-collapseFour" aria-expanded="false"
-                                            class="fw-semibold accordion-button collapsed"
-                                            data-bs-target="#Tech-collapseFour" style="font-size: 20px;"
-                                            data-bs-toggle="collapse" type="button">
-                                            Are there any fees?</button></h2>
-                                    <div aria-labelledby="Tech-headingFour" class="accordion-collapse collapse"
-                                        data-bs-parent="#Tech-accordion" id="Tech-collapseFour">
-                                        <div class="accordion-body" style="font-size: 14px;">
-                                            Txwai does not charge any hidden fees. However, there’s a small $1
-                                            withdrawal fee
-                                            applied to every withdrawals to cover network and processing costs.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="Tech-headingFive"><button
-                                            aria-controls="Tech-collapseFive" aria-expanded="false"
-                                            class="fw-semibold accordion-button collapsed"
-                                            data-bs-target="#Tech-collapseFive" style="font-size: 20px;"
-                                            data-bs-toggle="collapse" type="button">
-                                            How does Txwai benefit or make profit?</button></h2>
-                                    <div aria-labelledby="Tech-headingFive" class="accordion-collapse collapse"
-                                        data-bs-parent="#Tech-accordion" id="Tech-collapseFive">
-                                        <div class="accordion-body" style="font-size: 14px;">
-                                            There's a 5% commission taken from profits made by the bot. For example,
-                                            when you trade
-                                            and the AI makes $100 in profits, the company charges you 5% of the $100
-                                            profits made
-                                            by the bot, not from your capital but only from the profits made.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="Tech-headingTen"><button
-                                            aria-controls="Tech-collapseTen" aria-expanded="false"
-                                            class="fw-semibold accordion-button collapsed"
-                                            data-bs-target="#Tech-collapseTen" style="font-size: 20px;"
-                                            data-bs-toggle="collapse" type="button">
-                                            Is my funds safe?</button></h2>
-                                    <div aria-labelledby="Tech-headingTen" class="accordion-collapse collapse"
-                                        data-bs-parent="#Tech-accordion" id="Tech-collapseTen">
-                                        <div class="accordion-body" style="font-size: 14px;">
-                                            Yes! Your funds and capital is 100% safe and secured on the system, you
-                                            don't
-                                            have to be scared of loosing out, your capital is returned after every
-                                            trade.
-                                            You can choose to withdraw both your capital and profits anytime. 100%
-                                            guarantee
-                                            on withdrawals.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="Tech-headingSeven"><button
-                                            aria-controls="Tech-collapseSeven" aria-expanded="false"
-                                            class="fw-semibold accordion-button collapsed"
-                                            data-bs-target="#Tech-collapseSeven" style="font-size: 20px;"
-                                            data-bs-toggle="collapse" type="button">
-                                            How fast is deposit and withdrawal?</button></h2>
-                                    <div aria-labelledby="Tech-headingSeven" class="accordion-collapse collapse"
-                                        data-bs-parent="#Tech-accordion" id="Tech-collapseSeven">
-                                        <div class="accordion-body" style="font-size: 14px;">
-                                            Deposits and Withdrawals are instantly processed and should arrive within 30
-                                            minutes maximum. There are no fees on deposits and withdrawals. Deposits and
-                                            withdrawals are processed through crypto.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="Tech-headingSix"><button
-                                            aria-controls="Tech-collapseSix" aria-expanded="false"
-                                            class="fw-semibold accordion-button collapsed"
-                                            data-bs-target="#Tech-collapseSix" style="font-size: 20px;"
-                                            data-bs-toggle="collapse" type="button">
-                                            Does Txwai increase my returns daily?</button></h2>
-                                    <div aria-labelledby="Tech-headingSix" class="accordion-collapse collapse"
-                                        data-bs-parent="#Tech-accordion" id="Tech-collapseSix">
-                                        <div class="accordion-body" style="font-size: 14px;">
-                                            Yes, it does. Our AI Bot increases customer assets daily and tries to
-                                            eliminate
-                                            the potential for liquidation risk. By combining AI with a proven scalping
-                                            trading strategy, we created an AI Bot that trades autonomously, buying low
-                                            and
-                                            selling high at the right time, while constantly modifying positions to
-                                            potentially increase steady returns and cut down risk.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="Tech-headingNine"><button
-                                            aria-controls="Tech-collapseNine" aria-expanded="false"
-                                            class="fw-semibold accordion-button collapsed"
-                                            data-bs-target="#Tech-collapseNine" style="font-size: 20px;"
-                                            data-bs-toggle="collapse" type="button">
-                                            What is the minimum deposit and withdrawal?</button></h2>
-                                    <div aria-labelledby="Tech-headingNine" class="accordion-collapse collapse"
-                                        data-bs-parent="#Tech-accordion" id="Tech-collapseNine">
-                                        <div class="accordion-body" style="font-size: 14px;">
-                                            The minimum deposit is $100, the minimum withdrawal is $25. There are no
-                                            limits
-                                            on deposits and withdrawals, you can choose to deposit and withdraw any
-                                            amounts
-                                            as the forex and crypto market is unlimited. Deposits and withdrawals are
-                                            processed through cryptocurrency.
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="Tech-headingNiner"><button
-                                            aria-controls="Tech-collapseNiner" aria-expanded="false"
-                                            class="fw-semibold accordion-button collapsed"
-                                            data-bs-target="#Tech-collapseNiner" style="font-size: 20px;"
-                                            data-bs-toggle="collapse" type="button">
-                                            What else do I need to know?</button></h2>
-                                    <div aria-labelledby="Tech-headingNiner" class="accordion-collapse collapse"
-                                        data-bs-parent="#Tech-accordion" id="Tech-collapseNiner">
-                                        <div class="accordion-body" style="font-size: 14px;">
-                                            Getting started with Txwai is very easy, you don't need any
-                                            technical knowledge to earn from this. there is a scalping
-                                            strategy already setup for you, all you need to do is input
-                                            a trade amount and choose if it’s Demo or Live you’d want to
-                                            trade on. This works for every country, the robot trades on
-                                            both weekdays and weekends, trades forex and crypto during
-                                            the week and trades only crypto during weekends. You can
-                                            always contact our live support if you need further help.
+                                    <div class="elementor-element elementor-element-5588d24 elementor-hidden-desktop elementor-hidden-tablet elementor-widget elementor-widget-mockup-block"
+                                        data-id="5588d24" data-element_type="widget"
+                                        data-settings="{&quot;_animation&quot;:&quot;none&quot;}"
+                                        data-widget_type="mockup-block.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="mockup-block flex justify-center">
+                                                <img decoding="async" loading="lazy"
+                                                    class="mockup_screenshot centerX-absolute"
+                                                    src="wp-content/uploads/2025/03/Screenshot-2025-03-26-at-15.48.10.png">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                        <div class="elementor-container elementor-column-gap-default">
+                            <div style="justify-content: center; margin-top: 1rem;"
+                                class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-674d720"
+                                data-id="674d720" data-element_type="column">
+                                <div>
+                                    <ul class="app-links">
+                                        <a
+                                            href="https://play.google.com/store/apps/details?id=com.haryadewalayanankonstruksi&hl=en">
+                                            <li class="playstore">
+                                                <div class="supertitle">Get it on</div>
+                                                <div class="title">Google Play</div>
+                                            </li>
+                                        </a>
+                                        <a href="https://apps.apple.com/ng/app/txwai/id6755783410">
+                                            <li class="appstore">
+                                                <div class="supertitle">Download on the</div>
+                                                <div class="title">App Store</div>
+                                            </li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section
+        class="elementor-section elementor-top-section elementor-element elementor-element-48c09f1 tl-section-border tl-section-border-top no-inner-borders elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+        data-id="48c09f1" data-element_type="section"
+        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div class="elementor-container elementor-column-gap-default">
+            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-19eeb6b"
+                data-id="19eeb6b" data-element_type="column">
+                <div class="elementor-widget-wrap elementor-element-populated">
+                    <section
+                        class="elementor-section elementor-inner-section elementor-element elementor-element-3ae5ecd elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                        data-id="3ae5ecd" data-element_type="section">
+                        <div class="elementor-container elementor-column-gap-default">
+                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-2d03aa1"
+                                data-id="2d03aa1" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div class="elementor-element elementor-element-7a5c00b elementor-widget elementor-widget-main-block"
+                                        data-id="7a5c00b" data-element_type="widget"
+                                        data-widget_type="main-block.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="main-block text-left flex-wrap justify-start"
+                                                style="text-align:left">
+                                                <div class="main-block_child main-block_eyebrow"><img decoding="async"
+                                                        width="24" height="auto"
+                                                        src="wp-content/uploads/2025/03/plaform.svg">
+                                                </div>
+                                                <h2 class="main-block_child">$10,000 Demo Account
+                                                </h2>
+                                                <p class="main-block_child">Every new user gets a free $10,000 demo
+                                                    account to test the AI bot and understand how it works.</p>
+                                                <!-- Refactored Button Rendering -->
+                                                <div class="button-wrapper main-block_child justify-start">
+
+                                                    <a href="{{ route('register') }}">
+                                                        <button class="btn-platform">
+                                                            Start trading </button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-ed35d4f"
+                                data-id="ed35d4f" data-element_type="column">
+                                <div class="elementor-widget-wrap">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section
+        class="elementor-section elementor-top-section elementor-element elementor-element-48c09f1 tl-section-border tl-section-border-top no-inner-borders elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+        data-id="48c09f1" data-element_type="section"
+        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div class="elementor-container elementor-column-gap-default">
+            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-19eeb6b"
+                data-id="19eeb6b" data-element_type="column">
+                <div class="elementor-widget-wrap elementor-element-populated">
+                    <section
+                        class="elementor-section elementor-inner-section elementor-element elementor-element-3ae5ecd elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                        data-id="3ae5ecd" data-element_type="section">
+                        <div class="elementor-container elementor-column-gap-default">
+                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-2d03aa1"
+                                data-id="2d03aa1" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div class="elementor-element elementor-element-7a5c00b elementor-widget elementor-widget-main-block"
+                                        data-id="7a5c00b" data-element_type="widget"
+                                        data-widget_type="main-block.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="main-block text-left flex-wrap justify-start"
+                                                style="text-align:left">
+                                                <div class="main-block_child main-block_eyebrow"><img decoding="async"
+                                                        width="24" height="auto"
+                                                        src="wp-content/uploads/2025/03/plaform.svg">
+                                                </div>
+                                                <h2 class="main-block_child">Fully Licensed & Secured
+                                                </h2>
+                                                <p class="main-block_child">Txwai is a fully registered and licensed
+                                                    company based in the UK at Provincial House, New Walk, Leicester,
+                                                    United Kingdom, LE1
+                                                    6TU with the registration number <a
+                                                        href="https://find-and-update.company-information.service.gov.uk/company/10908818"
+                                                        style="text-decoration: underline;">10908818</a>. The
+                                                    platform is encrypted with top-grade security standards, ensuring
+                                                    your funds and data remain protected at all times.</p>
+                                                <!-- Refactored Button Rendering -->
+                                                <div class="button-wrapper main-block_child justify-start">
+
+                                                    <a href="{{ route('register') }}">
+                                                        <button class="btn-platform">
+                                                            Start trading </button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-ed35d4f"
+                                data-id="ed35d4f" data-element_type="column">
+                                <div class="elementor-widget-wrap">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section
+        class="elementor-section elementor-top-section elementor-element elementor-element-48c09f1 tl-section-border tl-section-border-top no-inner-borders elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+        data-id="48c09f1" data-element_type="section"
+        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div class="elementor-container elementor-column-gap-default">
+            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-19eeb6b"
+                data-id="19eeb6b" data-element_type="column">
+                <div class="elementor-widget-wrap elementor-element-populated">
+                    <section
+                        class="elementor-section elementor-inner-section elementor-element elementor-element-3ae5ecd elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                        data-id="3ae5ecd" data-element_type="section">
+                        <div class="elementor-container elementor-column-gap-default">
+                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-2d03aa1"
+                                data-id="2d03aa1" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div class="elementor-element elementor-element-7a5c00b elementor-widget elementor-widget-main-block"
+                                        data-id="7a5c00b" data-element_type="widget"
+                                        data-widget_type="main-block.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="main-block text-left flex-wrap justify-start"
+                                                style="text-align:left">
+                                                <div class="main-block_child main-block_eyebrow"><img decoding="async"
+                                                        width="24" height="auto"
+                                                        src="wp-content/uploads/2025/03/plaform.svg">
+                                                </div>
+                                                <h2 class="main-block_child">
+                                                    Instant Deposit & Withdrawal
+                                                </h2>
+                                                <p class="main-block_child">
+                                                    All deposits and withdrawals are processed instantly within minutes.
+                                                </p>
+                                                <!-- Refactored Button Rendering -->
+                                                <div class="button-wrapper main-block_child justify-start">
+
+                                                    <a href="{{ route('register') }}">
+                                                        <button class="btn-platform">
+                                                            Start trading </button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-ed35d4f"
+                                data-id="ed35d4f" data-element_type="column">
+                                <div class="elementor-widget-wrap">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section
+        class="elementor-section elementor-top-section elementor-element elementor-element-48c09f1 tl-section-border tl-section-border-top no-inner-borders elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+        data-id="48c09f1" data-element_type="section"
+        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div class="elementor-container elementor-column-gap-default">
+            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-19eeb6b"
+                data-id="19eeb6b" data-element_type="column">
+                <div class="elementor-widget-wrap elementor-element-populated">
+                    <section
+                        class="elementor-section elementor-inner-section elementor-element elementor-element-3ae5ecd elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                        data-id="3ae5ecd" data-element_type="section">
+                        <div class="elementor-container elementor-column-gap-default">
+                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-2d03aa1"
+                                data-id="2d03aa1" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div class="elementor-element elementor-element-7a5c00b elementor-widget elementor-widget-main-block"
+                                        data-id="7a5c00b" data-element_type="widget"
+                                        data-widget_type="main-block.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="main-block text-left flex-wrap justify-start"
+                                                style="text-align:left">
+                                                <div class="main-block_child main-block_eyebrow"><img decoding="async"
+                                                        width="24" height="auto"
+                                                        src="wp-content/uploads/2025/03/plaform.svg">
+                                                </div>
+                                                <h2 class="main-block_child">Referral Program
+                                                </h2>
+                                                <p class="main-block_child">Earn passive income by inviting others.
+                                                    Txwai’s three-level referral system gives Level 1: 8% on deposits &
+                                                    12% on trades. Level 2: 4% on deposits & 8% on trades. Level 3: 2%
+                                                    on deposits & 4% on trades.</p>
+                                                <!-- Refactored Button Rendering -->
+                                                <div class="button-wrapper main-block_child justify-start">
+
+                                                    <a href="{{ route('register') }}">
+                                                        <button class="btn-platform">
+                                                            Start trading </button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-ed35d4f"
+                                data-id="ed35d4f" data-element_type="column">
+                                <div class="elementor-widget-wrap">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section
+        class="elementor-section elementor-top-section elementor-element elementor-element-48c09f1 tl-section-border tl-section-border-top no-inner-borders elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+        data-id="48c09f1" data-element_type="section"
+        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div class="elementor-container elementor-column-gap-default">
+            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-19eeb6b"
+                data-id="19eeb6b" data-element_type="column">
+                <div class="elementor-widget-wrap elementor-element-populated">
+                    <section
+                        class="elementor-section elementor-inner-section elementor-element elementor-element-3ae5ecd elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                        data-id="3ae5ecd" data-element_type="section">
+                        <div class="elementor-container elementor-column-gap-default">
+                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-2d03aa1"
+                                data-id="2d03aa1" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div class="elementor-element elementor-element-7a5c00b elementor-widget elementor-widget-main-block"
+                                        data-id="7a5c00b" data-element_type="widget"
+                                        data-widget_type="main-block.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="main-block text-left flex-wrap justify-start"
+                                                style="text-align:left">
+                                                <div class="main-block_child main-block_eyebrow"><img decoding="async"
+                                                        width="24" height="auto"
+                                                        src="wp-content/uploads/2025/03/plaform.svg">
+                                                </div>
+                                                <h2 class="main-block_child">No Trading Skills Required
+                                                </h2>
+                                                <p class="main-block_child">Whether you’re a beginner or a
+                                                    professional. Simply activate your AI robot and let it trade
+                                                    automatically while you monitor results.</p>
+                                                <!-- Refactored Button Rendering -->
+                                                <div class="button-wrapper main-block_child justify-start">
+
+                                                    <a href="{{ route('register') }}">
+                                                        <button class="btn-platform">
+                                                            Start trading </button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-ed35d4f"
+                                data-id="ed35d4f" data-element_type="column">
+                                <div class="elementor-widget-wrap">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section
+        class="elementor-section elementor-top-section elementor-element elementor-element-48c09f1 tl-section-border tl-section-border-top no-inner-borders elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+        data-id="48c09f1" data-element_type="section"
+        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div class="elementor-container elementor-column-gap-default">
+            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-19eeb6b"
+                data-id="19eeb6b" data-element_type="column">
+                <div class="elementor-widget-wrap elementor-element-populated">
+                    <section
+                        class="elementor-section elementor-inner-section elementor-element elementor-element-3ae5ecd elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                        data-id="3ae5ecd" data-element_type="section">
+                        <div class="elementor-container elementor-column-gap-default">
+                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-2d03aa1"
+                                data-id="2d03aa1" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div class="elementor-element elementor-element-7a5c00b elementor-widget elementor-widget-main-block"
+                                        data-id="7a5c00b" data-element_type="widget"
+                                        data-widget_type="main-block.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="main-block text-left flex-wrap justify-start"
+                                                style="text-align:left">
+                                                <div class="main-block_child main-block_eyebrow"><img decoding="async"
+                                                        width="24" height="auto"
+                                                        src="wp-content/uploads/2025/03/plaform.svg">
+                                                </div>
+                                                <h2 class="main-block_child">Worldwide Access
+                                                </h2>
+                                                <p class="main-block_child">Accessible from any country, Txwai allows
+                                                    users to trade, deposit, and withdraw globally with no restrictions.
+                                                </p>
+                                                <!-- Refactored Button Rendering -->
+                                                <div class="button-wrapper main-block_child justify-start">
+
+                                                    <a href="{{ route('register') }}">
+                                                        <button class="btn-platform">
+                                                            Start trading </button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-ed35d4f"
+                                data-id="ed35d4f" data-element_type="column">
+                                <div class="elementor-widget-wrap">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faqs-section"
+        class="elementor-section elementor-top-section elementor-element elementor-element-103ee50 tl-section-border tl-section-border-bottom no-inner-borderss elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+        data-id="103ee50" data-element_type="section"
+        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div class="elementor-container elementor-column-gap-default">
+            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b3c0773"
+                data-id="b3c0773" data-element_type="column">
+                <div class="elementor-widget-wrap elementor-element-populated">
+                    <section style="padding-bottom: 0 !important;"
+                        class="elementor-section elementor-inner-section elementor-element elementor-element-ffa5a99 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                        data-id="ffa5a99" data-element_type="section">
+                        <div class="elementor-container elementor-column-gap-default">
+                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-9a4dd7b"
+                                data-id="9a4dd7b" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div class="elementor-element elementor-element-fa20bd2 elementor-widget elementor-widget-main-block"
+                                        data-id="fa20bd2" data-element_type="widget"
+                                        data-widget_type="main-block.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="main-block text-left flex-wrap justify-start"
+                                                style="text-align:left">
+                                                <h2 class="main-block_child">FAQs</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-3384970"
+                                data-id="3384970" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div class="elementor-element elementor-element-21dda50 elementor-widget__width-inherit elementor-widget elementor-widget-toggle"
+                                        data-id="21dda50" data-element_type="widget"
+                                        data-widget_type="toggle.default">
+                                        <div class="elementor-widget-container" style="margin-bottom: 0 !important;">
+                                            <style>
+                                                /*! elementor - v3.13.3 - 28-05-2023 */
+                                                .elementor-toggle {
+                                                    text-align: left
+                                                }
+
+                                                .elementor-toggle .elementor-tab-title {
+                                                    font-weight: 700;
+                                                    line-height: 1;
+                                                    margin: 0;
+                                                    padding: 15px;
+                                                    border-bottom: 1px solid #d5d8dc;
+                                                    cursor: pointer;
+                                                    outline: none
+                                                }
+
+                                                .elementor-toggle .elementor-tab-title .elementor-toggle-icon {
+                                                    display: inline-block;
+                                                    width: 1em
+                                                }
+
+                                                .elementor-toggle .elementor-tab-title .elementor-toggle-icon svg {
+                                                    -webkit-margin-start: -5px;
+                                                    margin-inline-start: -5px;
+                                                    width: 1em;
+                                                    height: 1em
+                                                }
+
+                                                .elementor-toggle .elementor-tab-title .elementor-toggle-icon.elementor-toggle-icon-right {
+                                                    float: right;
+                                                    text-align: right
+                                                }
+
+                                                .elementor-toggle .elementor-tab-title .elementor-toggle-icon.elementor-toggle-icon-left {
+                                                    float: left;
+                                                    text-align: left
+                                                }
+
+                                                .elementor-toggle .elementor-tab-title .elementor-toggle-icon .elementor-toggle-icon-closed {
+                                                    display: block
+                                                }
+
+                                                .elementor-toggle .elementor-tab-title .elementor-toggle-icon .elementor-toggle-icon-opened {
+                                                    display: none
+                                                }
+
+                                                .elementor-toggle .elementor-tab-title.elementor-active {
+                                                    border-bottom: none
+                                                }
+
+                                                .elementor-toggle .elementor-tab-title.elementor-active .elementor-toggle-icon-closed {
+                                                    display: none
+                                                }
+
+                                                .elementor-toggle .elementor-tab-title.elementor-active .elementor-toggle-icon-opened {
+                                                    display: block
+                                                }
+
+                                                .elementor-toggle .elementor-tab-content {
+                                                    padding: 15px;
+                                                    border-bottom: 1px solid #d5d8dc;
+                                                    display: none
+                                                }
+
+                                                @media (max-width:767px) {
+                                                    .elementor-toggle .elementor-tab-title {
+                                                        padding: 12px
+                                                    }
+
+                                                    .elementor-toggle .elementor-tab-content {
+                                                        padding: 12px 10px
+                                                    }
+                                                }
+
+                                                .e-con-inner>.elementor-widget-toggle,
+                                                .e-con>.elementor-widget-toggle {
+                                                    width: var(--container-widget-width);
+                                                    --flex-grow: var(--container-widget-flex-grow)
+                                                }
+                                            </style>
+                                            <div class="elementor-toggle" role="tablist">
+                                                <div class="elementor-toggle-item">
+                                                    <div id="elementor-tab-title-3551" class="elementor-tab-title"
+                                                        data-tab="1" role="tab"
+                                                        aria-controls="elementor-tab-content-3551"
+                                                        aria-expanded="false">
+                                                        <span class="elementor-toggle-icon elementor-toggle-icon-left"
+                                                            aria-hidden="true">
+                                                            <span class="elementor-toggle-icon-closed"><i
+                                                                    class="fas fa-caret-right"></i></span>
+                                                            <span class="elementor-toggle-icon-opened"><i
+                                                                    class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+                                                        </span>
+                                                        <a href="#" class="elementor-toggle-title">How does
+                                                            Txwai
+                                                            works?</a>
+                                                    </div>
+
+                                                    <div id="elementor-tab-content-3551"
+                                                        class="elementor-tab-content elementor-clearfix"
+                                                        data-tab="1" role="tabpanel"
+                                                        aria-labelledby="elementor-tab-title-3551">
+                                                        <p>
+                                                            Txwai is an automated AI trading bot that helps you trade
+                                                            the
+                                                            forex and crypto
+                                                            market easily with a proven scalping strategy powered by a
+                                                            strong algorithm that
+                                                            trades the market, opens and closes trades within seconds
+                                                            targeting profits per
+                                                            trade which in end accumulates profits gradually. All you
+                                                            need to do is create
+                                                            an account, start a trade on demo to see how it works, then
+                                                            fund your account to
+                                                            make real profits.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-toggle-item">
+                                                    <div id="elementor-tab-title-3552" class="elementor-tab-title"
+                                                        data-tab="2" role="tab"
+                                                        aria-controls="elementor-tab-content-3552"
+                                                        aria-expanded="false">
+                                                        <span class="elementor-toggle-icon elementor-toggle-icon-left"
+                                                            aria-hidden="true">
+                                                            <span class="elementor-toggle-icon-closed"><i
+                                                                    class="fas fa-caret-right"></i></span>
+                                                            <span class="elementor-toggle-icon-opened"><i
+                                                                    class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+                                                        </span>
+                                                        <a href="#" class="elementor-toggle-title">Do I need
+                                                            trading skills to earn?</a>
+                                                    </div>
+
+                                                    <div id="elementor-tab-content-3552"
+                                                        class="elementor-tab-content elementor-clearfix"
+                                                        data-tab="2" role="tabpanel"
+                                                        aria-labelledby="elementor-tab-title-3552">
+                                                        <p>
+                                                            No, you don't need any trading skills to profit from this,
+                                                            you can earn from
+                                                            Txwai with zero knowledge in trading. The AI bot handles
+                                                            all
+                                                            the trades for you
+                                                            and make profits, all you need to do is start the robot.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-toggle-item">
+                                                    <div id="elementor-tab-title-3553" class="elementor-tab-title"
+                                                        data-tab="3" role="tab"
+                                                        aria-controls="elementor-tab-content-3553"
+                                                        aria-expanded="false">
+                                                        <span class="elementor-toggle-icon elementor-toggle-icon-left"
+                                                            aria-hidden="true">
+                                                            <span class="elementor-toggle-icon-closed"><i
+                                                                    class="fas fa-caret-right"></i></span>
+                                                            <span class="elementor-toggle-icon-opened"><i
+                                                                    class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+                                                        </span>
+                                                        <a href="#" class="elementor-toggle-title">Are there any
+                                                            fees?</a>
+                                                    </div>
+
+                                                    <div id="elementor-tab-content-3553"
+                                                        class="elementor-tab-content elementor-clearfix"
+                                                        data-tab="3" role="tabpanel"
+                                                        aria-labelledby="elementor-tab-title-3553">
+                                                        <p>
+                                                            Txwai does not charge any hidden fees. However, there’s a
+                                                            small $1 withdrawal fee applied to every withdrawals to
+                                                            cover network and processing costs.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-toggle-item">
+                                                    <div id="elementor-tab-title-3553" class="elementor-tab-title"
+                                                        data-tab="12" role="tab"
+                                                        aria-controls="elementor-tab-content-3553"
+                                                        aria-expanded="false">
+                                                        <span class="elementor-toggle-icon elementor-toggle-icon-left"
+                                                            aria-hidden="true">
+                                                            <span class="elementor-toggle-icon-closed"><i
+                                                                    class="fas fa-caret-right"></i></span>
+                                                            <span class="elementor-toggle-icon-opened"><i
+                                                                    class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+                                                        </span>
+                                                        <a href="#" class="elementor-toggle-title">How does
+                                                            Txwai benefit or make profit?</a>
+                                                    </div>
+
+                                                    <div id="elementor-tab-content-3553"
+                                                        class="elementor-tab-content elementor-clearfix"
+                                                        data-tab="12" role="tabpanel"
+                                                        aria-labelledby="elementor-tab-title-3553">
+                                                        <p>
+                                                            There's a 5% commission taken from profits made by the bot.
+                                                            For example, when you trade and the AI makes $100 in
+                                                            profits, the company charges you 5% of the $100 profits
+                                                            made by the bot, not from your capital but only from the
+                                                            profits made.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-toggle-item">
+                                                    <div id="elementor-tab-title-3554" class="elementor-tab-title"
+                                                        data-tab="4" role="tab"
+                                                        aria-controls="elementor-tab-content-3554"
+                                                        aria-expanded="false">
+                                                        <span class="elementor-toggle-icon elementor-toggle-icon-left"
+                                                            aria-hidden="true">
+                                                            <span class="elementor-toggle-icon-closed"><i
+                                                                    class="fas fa-caret-right"></i></span>
+                                                            <span class="elementor-toggle-icon-opened"><i
+                                                                    class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+                                                        </span>
+                                                        <a href="#" class="elementor-toggle-title">Is my funds
+                                                            safe?</a>
+                                                    </div>
+
+                                                    <div id="elementor-tab-content-3554"
+                                                        class="elementor-tab-content elementor-clearfix"
+                                                        data-tab="4" role="tabpanel"
+                                                        aria-labelledby="elementor-tab-title-3554">
+                                                        <p>
+                                                            Yes! Your funds and capital is 100% safe and secured on the
+                                                            system, you don't
+                                                            have to be scared of loosing out, your capital is returned
+                                                            after every trade.
+                                                            You can choose to withdraw both your capital and profits
+                                                            anytime. 100% guarantee
+                                                            on withdrawals.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-toggle-item">
+                                                    <div id="elementor-tab-title-3555" class="elementor-tab-title"
+                                                        data-tab="5" role="tab"
+                                                        aria-controls="elementor-tab-content-3555"
+                                                        aria-expanded="false">
+                                                        <span class="elementor-toggle-icon elementor-toggle-icon-left"
+                                                            aria-hidden="true">
+                                                            <span class="elementor-toggle-icon-closed"><i
+                                                                    class="fas fa-caret-right"></i></span>
+                                                            <span class="elementor-toggle-icon-opened"><i
+                                                                    class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+                                                        </span>
+                                                        <a href="#" class="elementor-toggle-title">How fast is
+                                                            deposit and withdrawal?</a>
+                                                    </div>
+
+                                                    <div id="elementor-tab-content-3555"
+                                                        class="elementor-tab-content elementor-clearfix"
+                                                        data-tab="5" role="tabpanel"
+                                                        aria-labelledby="elementor-tab-title-3555">
+                                                        <p>
+                                                            Deposits and Withdrawals are instantly processed and should
+                                                            arrive within 30
+                                                            minutes maximum. There are no fees on deposits and
+                                                            withdrawals. Deposits and
+                                                            withdrawals are processed through crypto.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-toggle-item">
+                                                    <div id="elementor-tab-title-3556" class="elementor-tab-title"
+                                                        data-tab="6" role="tab"
+                                                        aria-controls="elementor-tab-content-3556"
+                                                        aria-expanded="false">
+                                                        <span class="elementor-toggle-icon elementor-toggle-icon-left"
+                                                            aria-hidden="true">
+                                                            <span class="elementor-toggle-icon-closed"><i
+                                                                    class="fas fa-caret-right"></i></span>
+                                                            <span class="elementor-toggle-icon-opened"><i
+                                                                    class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+                                                        </span>
+                                                        <a href="#" class="elementor-toggle-title">Does Txwai
+                                                            increase my returns daily?</a>
+                                                    </div>
+
+                                                    <div id="elementor-tab-content-3556"
+                                                        class="elementor-tab-content elementor-clearfix"
+                                                        data-tab="6" role="tabpanel"
+                                                        aria-labelledby="elementor-tab-title-3556">
+                                                        <p>
+                                                            Yes, it does. Our AI Bot increases customer assets daily and
+                                                            tries to eliminate
+                                                            the potential for liquidation risk. By combining AI with a
+                                                            proven scalping
+                                                            trading strategy, we created an AI Bot that trades
+                                                            autonomously, buying low and
+                                                            selling high at the right time, while constantly modifying
+                                                            positions to
+                                                            potentially increase steady returns and cut down risk.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-toggle-item">
+                                                    <div id="elementor-tab-title-3558" class="elementor-tab-title"
+                                                        data-tab="8" role="tab"
+                                                        aria-controls="elementor-tab-content-3558"
+                                                        aria-expanded="false">
+                                                        <span class="elementor-toggle-icon elementor-toggle-icon-left"
+                                                            aria-hidden="true">
+                                                            <span class="elementor-toggle-icon-closed"><i
+                                                                    class="fas fa-caret-right"></i></span>
+                                                            <span class="elementor-toggle-icon-opened"><i
+                                                                    class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+                                                        </span>
+                                                        <a href="#" class="elementor-toggle-title">What is the
+                                                            minimum deposit and withdrawal?</a>
+                                                    </div>
+
+                                                    <div id="elementor-tab-content-3558"
+                                                        class="elementor-tab-content elementor-clearfix"
+                                                        data-tab="8" role="tabpanel"
+                                                        aria-labelledby="elementor-tab-title-3558">
+                                                        <p>
+                                                            The minimum deposit is $100, the minimum withdrawal is $25.
+                                                            There are no limits
+                                                            on deposits and withdrawals, you can choose to deposit and
+                                                            withdraw any amounts
+                                                            as the forex and crypto market is unlimited. Deposits and
+                                                            withdrawals are
+                                                            processed through cryptocurrency.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-toggle-item">
+                                                    <div id="elementor-tab-title-3557" class="elementor-tab-title"
+                                                        data-tab="7" role="tab"
+                                                        aria-controls="elementor-tab-content-3557"
+                                                        aria-expanded="false">
+                                                        <span class="elementor-toggle-icon elementor-toggle-icon-left"
+                                                            aria-hidden="true">
+                                                            <span class="elementor-toggle-icon-closed"><i
+                                                                    class="fas fa-caret-right"></i></span>
+                                                            <span class="elementor-toggle-icon-opened"><i
+                                                                    class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+                                                        </span>
+                                                        <a href="#" class="elementor-toggle-title">What else do
+                                                            I need to know?</a>
+                                                    </div>
+
+                                                    <div id="elementor-tab-content-3557"
+                                                        class="elementor-tab-content elementor-clearfix"
+                                                        data-tab="7" role="tabpanel"
+                                                        aria-labelledby="elementor-tab-title-3557">
+                                                        <p>
+                                                            Getting started with Txwai is very easy, you don't need any
+                                                            technical knowledge to earn from this. there is a scalping
+                                                            strategy already setup for you, all you need to do is input
+                                                            a trade amount and choose if it’s Demo or Live you’d want to
+                                                            trade on. This works for every country, the robot trades on
+                                                            both weekdays and weekends, trades forex and crypto during
+                                                            the week and trades only crypto during weekends. You can
+                                                            always contact our live support if you need further help.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is forex trading?","acceptedAnswer":{"@type":"Answer","text":"<p>Forex trading (or FX trading) is the buying and selling of world currencies on a global, decentralized market. Traders speculate on currency price movements\u2014such as the EUR\/USD or USD\/JPY pairs\u2014to profit from fluctuations in exchange rates.<\/p>"}},{"@type":"Question","name":"How does forex trading work on TradeLocker?","acceptedAnswer":{"@type":"Answer","text":"<p>First you need to find your <a href=\"\/start-trading\">broker<\/a> or a <a href=\"https:\/\/tradelocker.com\/hub\">prop<\/a>. After picking the right one you have to choose the right platform, we of course suggest TradeLocker. The whole point of forex trading is buying one currency and selling another simultaneously in a currency pair. Each pair\u2014like EUR\/USD\u2014has a base (EUR) and a quote (USD) currency, and its price tells you how much of the quote you need to buy one unit of the base. Traders speculate on whether the base will strengthen (go long\/buy) or weaken (go short\/sell) against the quote.<br \/><!-- notionvc: 20063612-70fb-49d0-82f8-a782ad235467 --><\/p>"}},{"@type":"Question","name":"Why should I trade forex?","acceptedAnswer":{"@type":"Answer","text":"<ul>\n \t<li><strong data-start=\"794\" data-end=\"813\">High liquidity:<\/strong> Over $6 trillion traded daily ensures tight spreads and fast execution.<\/li>\n \t<li><strong data-start=\"891\" data-end=\"913\">24\/5 market hours:<\/strong> Trade around the clock Monday\u2013Friday to capture global opportunities.<\/li>\n \t<li><strong data-start=\"988\" data-end=\"1001\">Leverage:<\/strong> Amplify your capital with flexible margin options.<\/li>\n \t<li><strong>Diversification<\/strong>: Add currency pairs to your portfolio for better risk management.<\/li>\n<\/ul>"}},{"@type":"Question","name":"Is forex trading legit?","acceptedAnswer":{"@type":"Answer","text":"<p>Yes, forex trading is a legitimate, regulated financial market where central banks, institutions, and retail traders participate. Always check your broker (that will not call you to invest trough random numbers) and practice sound risk management to trade safely. You are welcome to check out <a href=\"\/retail-trading\">brokers<\/a> or <a href=\"https:\/\/tradelocker.com\/hub\">props<\/a> on TradeLocker<br \/><!-- notionvc: 009c50e0-080f-4d9e-9505-aa38298f32ef --><\/p>"}},{"@type":"Question","name":"How to learn forex trading?","acceptedAnswer":{"@type":"Answer","text":"<p>Always start with a Demo <a href=\"\/demo-trading\">trading account<\/a>. Take a small account because it would be pretty irresponsible to start trading with an account of $100k. Read our TradeLocker <a href=\"\/how-to\/daytrading-for-beginners\/\">Handbook<\/a> and get introduced with everything forex trading offers. Start practicing strategies without risk, if you need to find great ideas on how to trade, we have <a href=\"\/news-category\/auditorium\">Astronaut Auditorium<\/a>. It is our series where we interview people that have started trading and took it full time. When you start being consistently profitable you can switch to Live and start trading with real money.\u00a0<\/p>"}}]}</script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
     </section>
 </div>
+
+@script
+    <script>
+        $wire.on('fetch-market-data-error', (event) => {
+            const toastMarkup = `
+                <div class="flex p-4">
+                    <div class="shrink-0">
+                        <svg class="shrink-0 size-4 text-red-500 mt-0.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"></path>
+                        </svg>
+                    </div>
+                    <div class="ms-3 flex-1">
+                        <p class="text-xs font-semibold text-gray-700 dark:text-neutral-400">${event.message}</p>
+                    </div>
+                </div>
+            `;
+
+            Toastify({
+                text: toastMarkup,
+                className: "hs-toastify-on:opacity-100 opacity-0 absolute top-0 start-1/2 -translate-x-1/2 z-90 duration-300 w-full md:w-1/2 lg:w-1/4 bg-white text-sm text-gray-700 border border-gray-200 rounded-xl shadow-lg [&>.toast-close]:hidden dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-400",
+                duration: 4000,
+                close: true,
+                escapeMarkup: false
+            }).showToast();
+        });
+    </script>
+@endscript

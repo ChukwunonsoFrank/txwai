@@ -12,7 +12,7 @@ use Livewire\Attributes\Title;
 use Livewire\Attributes\Url;
 use Livewire\Component;
 
-#[Layout('components.layouts.auth.applayout')]
+#[Layout('components.layouts.auth.layout')]
 
 #[Title('App Register')]
 

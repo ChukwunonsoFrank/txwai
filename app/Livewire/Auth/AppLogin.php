@@ -16,7 +16,7 @@ use Livewire\Attributes\Title;
 use Livewire\Attributes\Validate;
 use Livewire\Component;
 
-#[Layout("components.layouts.auth.applayout")]
+#[Layout("components.layouts.auth.layout")]
 #[Title("App Login")]
 class AppLogin extends Component
 {

@@ -2,57 +2,656 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Txwai - AI Trading bot</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17538896252"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-17538896252');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Txwai - Automated AI Trading</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <link rel="preload" href="{{ asset('wp-content/uploads/2024/06/space-cover.webp') }}" as="image">
+    <link rel="preload" href="{{ asset('wp-content/uploads/2024/06/door-2.webp') }}" as="image">
+    <link rel="preload" href="{{ asset('wp-content/uploads/2024/05/door-mobil.webp') }}" as="image">
+    <link rel="preload" href="{{ asset('wp-content/uploads/2023/03/EuclidSquare-Bold.ttf') }}" as="font"
+        type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="{{ asset('wp-content/uploads/2023/03/EuclidSquare-Regular.ttf') }}" as="font"
+        type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="{{ asset('wp-content/uploads/2023/03/EuclidSquare-Medium.ttf') }}" as="font"
+        type="font/ttf" crossorigin="anonymous">
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
 
-    <style>
-        * {
-            font-family: "Inter", serif;
+    <link rel='dns-prefetch' href='http://code.jquery.com/' />
+    <link rel='dns-prefetch' href='http://maxcdn.bootstrapcdn.com/' />
+    <link rel='dns-prefetch' href='http://unpkg.com/' />
+    <link rel='dns-prefetch' href='http://cdn.jsdelivr.net/' />
+    <link rel='dns-prefetch' href='http://cdnjs.cloudflare.com/' />
+    <link rel='dns-prefetch' href='http://js-eu1.hs-scripts.com/' />
+
+    <script>
+        window._wpemojiSettings = {
+            "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/",
+            "ext": ".png",
+            "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/",
+            "svgExt": ".svg",
+            "source": {
+                "concatemoji": "https:\/\/tradelocker.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.6.1"
+            }
+        };
+        /*! This file is auto-generated */
+        ! function(i, n) {
+            var o, s, e;
+
+            function c(e) {
+                try {
+                    var t = {
+                        supportTests: e,
+                        timestamp: (new Date).valueOf()
+                    };
+                    sessionStorage.setItem(o, JSON.stringify(t))
+                } catch (e) {}
+            }
+
+            function p(e, t, n) {
+                e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0);
+                var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data),
+                    r = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e
+                        .getImageData(0, 0, e.canvas.width, e.canvas.height).data));
+                return t.every(function(e, t) {
+                    return e === r[t]
+                })
+            }
+
+            function u(e, t, n) {
+                switch (t) {
+                    case "flag":
+                        return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !
+                            n(e, "\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") && !n(e,
+                                "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
+                                "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"
+                            );
+                    case "emoji":
+                        return !n(e, "\ud83d\udc26\u200d\u2b1b", "\ud83d\udc26\u200b\u2b1b")
+                }
+                return !1
+            }
+
+            function f(e, t, n) {
+                var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(
+                        300, 150) : i.createElement("canvas"),
+                    a = r.getContext("2d", {
+                        willReadFrequently: !0
+                    }),
+                    o = (a.textBaseline = "top", a.font = "600 32px Arial", {});
+                return e.forEach(function(e) {
+                    o[e] = t(a, e, n)
+                }), o
+            }
+
+            function t(e) {
+                var t = i.createElement("script");
+                t.src = e, t.defer = !0, i.head.appendChild(t)
+            }
+            "undefined" != typeof Promise && (o = "wpEmojiSettingsSupports", s = ["flag", "emoji"], n.supports = {
+                everything: !0,
+                everythingExceptFlag: !0
+            }, e = new Promise(function(e) {
+                i.addEventListener("DOMContentLoaded", e, {
+                    once: !0
+                })
+            }), new Promise(function(t) {
+                var n = function() {
+                    try {
+                        var e = JSON.parse(sessionStorage.getItem(o));
+                        if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() <
+                            e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests
+                    } catch (e) {}
+                    return null
+                }();
+                if (!n) {
+                    if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" !=
+                        typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try {
+                        var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), p
+                                .toString()
+                            ].join(",") + "));",
+                            r = new Blob([e], {
+                                type: "text/javascript"
+                            }),
+                            a = new Worker(URL.createObjectURL(r), {
+                                name: "wpTestEmojiSupports"
+                            });
+                        return void(a.onmessage = function(e) {
+                            c(n = e.data), a.terminate(), t(n)
+                        })
+                    } catch (e) {}
+                    c(n = f(s, u, p))
+                }
+                t(n)
+            }).then(function(e) {
+                for (var t in e) n.supports[t] = e[t], n.supports.everything = n.supports.everything && n
+                    .supports[t], "flag" !== t && (n.supports.everythingExceptFlag = n.supports
+                        .everythingExceptFlag && n.supports[t]);
+                n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag, n
+                    .DOMReady = !1, n.readyCallback = function() {
+                        n.DOMReady = !0
+                    }
+            }).then(function() {
+                return e
+            }).then(function() {
+                var e;
+                n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e
+                    .concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)))
+            }))
+        }((window, document), window._wpemojiSettings);
+    </script>
+
+    <style id='cf-frontend-style-inline-css'>
+        @font-face {
+            font-family: 'Source Code Pro';
+            font-weight: 400;
+            src: url('{{ asset('wp-content/uploads/2024/07/Source-Code-Pro-for-Powerline.otf') }}') format('OpenType');
         }
 
-        .btn-disabled {
-            background: #1F4ED8;
-            border-radius: 0.375rem;
-            border: none;
-            cursor: not-allowed;
+        @font-face {
+            font-family: 'Menlo';
+            font-weight: 400;
+            src: url('{{ asset('wp-content/uploads/2023/12/Menlo-Regular.woff') }}') format('woff');
+        }
+
+        @font-face {
+            font-family: 'Inter';
+            font-weight: 700;
+            src: url('{{ asset('wp-content/uploads/2023/12/Inter-VariableFont_slntwght.ttf') }}') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Inter';
+            font-weight: 600;
+            src: url('{{ asset('wp-content/uploads/2023/12/Inter-VariableFont_slntwght.ttf') }}') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Inter';
+            font-weight: 500;
+            src: url('{{ asset('wp-content/uploads/2023/12/Inter-VariableFont_slntwght.ttf') }}') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Euclid Square';
+            font-weight: 400;
+            font-display: auto;
+            font-fallback: Helvetica;
+            src: url('{{ asset('wp-content/uploads/2023/03/EuclidSquare-Regular.ttf') }}') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Euclid Square';
+            font-weight: 700;
+            font-display: auto;
+            font-fallback: Helvetica;
+            src: url('{{ asset('wp-content/uploads/2023/03/EuclidSquare-Bold.ttf') }}') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Euclid Square';
+            font-weight: 300;
+            font-display: auto;
+            font-fallback: Helvetica;
+            src: url('{{ asset('wp-content/uploads/2023/03/EuclidSquare-Light.ttf') }}') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Euclid Square';
+            font-weight: 500;
+            font-display: auto;
+            font-fallback: Helvetica;
+            src: url('{{ asset('wp-content/uploads/2023/03/EuclidSquare-Medium.ttf') }}') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Euclid Square';
+            font-weight: 600;
+            font-display: auto;
+            font-fallback: Helvetica;
+            src: url('{{ asset('wp-content/uploads/2023/03/EuclidSquare-SemiBold.ttf') }}') format('truetype');
+        }
+    </style>
+    <link rel='stylesheet' id='dashicons-css' href='{{ asset('wp-includes/css/dashicons.minb6a4.css') }}'
+        media='all' />
+    <link rel='stylesheet' id='menu-icons-extra-css'
+        href='{{ asset('wp-content/plugins/menu-icons/css/extra.minc28c.css') }}' media='all' />
+    <link rel='stylesheet' id='hello-elementor-style-css'
+        href='{{ asset('wp-content/themes/hello-elementor/style8a54.css') }}' media='all' />
+    <link rel='stylesheet' id='hello-elementor-child-style-css'
+        href='{{ asset('wp-content/uploads/wp-less/tradelocker-child/css/style-5430c549c4.css') }}' media='all' />
+    <link rel='stylesheet' id='price-calc-style-css'
+        href='{{ asset('wp-content/uploads/wp-less/tradelocker-child/css/price-calc-a7036eb618.css') }}'
+        media='all' />
+    <link rel='stylesheet' id='elementor-widgets-css'
+        href='{{ asset('wp-content/uploads/wp-less/tradelocker-child/css/elementor-widgets-e4d9c83533.css') }}'
+        media='all' />
+    <link rel='stylesheet' id='prism-vs-code-css'
+        href='{{ asset('wp-content/themes/tradelocker-child/css/prism-vs-code39c0.css') }}' media='all' />
+    <link rel='stylesheet' id='select2css-css'
+        href='{{ asset('wp-content/themes/tradelocker-child/css/select29cd0.css') }}' media='all' />
+
+    <style id='wp-emoji-styles-inline-css'>
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 0.07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
         }
     </style>
 
-    <link rel="stylesheet" href="{{ asset('homeassets/css/main.css') }}">
+    <link rel='stylesheet' id='wp-block-library-css'
+        href='{{ asset('wp-includes/css/dist/block-library/style.minb6a4.css') }}' media='all' />
+    <style id='classic-theme-styles-inline-css'>
+        /*! This file is auto-generated */
+        .wp-block-button__link {
+            color: #fff;
+            background-color: #32373c;
+            border-radius: 9999px;
+            box-shadow: none;
+            text-decoration: none;
+            padding: calc(.667em + 2px) calc(1.333em + 2px);
+            font-size: 1.125em
+        }
 
-    <!--Bootstrap icons-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+        .wp-block-file__button {
+            background: #32373c;
+            color: #fff;
+            text-decoration: none
+        }
+    </style>
+    <style id='global-styles-inline-css'>
+        :root {
+            --wp--preset--aspect-ratio--square: 1;
+            --wp--preset--aspect-ratio--4-3: 4/3;
+            --wp--preset--aspect-ratio--3-4: 3/4;
+            --wp--preset--aspect-ratio--3-2: 3/2;
+            --wp--preset--aspect-ratio--2-3: 2/3;
+            --wp--preset--aspect-ratio--16-9: 16/9;
+            --wp--preset--aspect-ratio--9-16: 9/16;
+            --wp--preset--color--black: #000000;
+            --wp--preset--color--cyan-bluish-gray: #abb8c3;
+            --wp--preset--color--white: #ffffff;
+            --wp--preset--color--pale-pink: #f78da7;
+            --wp--preset--color--vivid-red: #cf2e2e;
+            --wp--preset--color--luminous-vivid-orange: #ff6900;
+            --wp--preset--color--luminous-vivid-amber: #fcb900;
+            --wp--preset--color--light-green-cyan: #7bdcb5;
+            --wp--preset--color--vivid-green-cyan: #00d084;
+            --wp--preset--color--pale-cyan-blue: #8ed1fc;
+            --wp--preset--color--vivid-cyan-blue: #0693e3;
+            --wp--preset--color--vivid-purple: #9b51e0;
+            --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+            --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+            --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+            --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+            --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+            --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+            --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+            --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+            --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+            --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+            --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+            --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+            --wp--preset--font-size--small: 13px;
+            --wp--preset--font-size--medium: 20px;
+            --wp--preset--font-size--large: 36px;
+            --wp--preset--font-size--x-large: 42px;
+            --wp--preset--spacing--20: 0.44rem;
+            --wp--preset--spacing--30: 0.67rem;
+            --wp--preset--spacing--40: 1rem;
+            --wp--preset--spacing--50: 1.5rem;
+            --wp--preset--spacing--60: 2.25rem;
+            --wp--preset--spacing--70: 3.38rem;
+            --wp--preset--spacing--80: 5.06rem;
+            --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+            --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+            --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+        }
 
-    <script async src="https://www.google.com/recaptcha/api.js"></script>
+        :where(.is-layout-flex) {
+            gap: 0.5em;
+        }
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        :where(.is-layout-grid) {
+            gap: 0.5em;
+        }
 
+        body .is-layout-flex {
+            display: flex;
+        }
+
+        .is-layout-flex {
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .is-layout-flex> :is(*, div) {
+            margin: 0;
+        }
+
+        body .is-layout-grid {
+            display: grid;
+        }
+
+        .is-layout-grid> :is(*, div) {
+            margin: 0;
+        }
+
+        :where(.wp-block-columns.is-layout-flex) {
+            gap: 2em;
+        }
+
+        :where(.wp-block-columns.is-layout-grid) {
+            gap: 2em;
+        }
+
+        :where(.wp-block-post-template.is-layout-flex) {
+            gap: 1.25em;
+        }
+
+        :where(.wp-block-post-template.is-layout-grid) {
+            gap: 1.25em;
+        }
+
+        .has-black-color {
+            color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-color {
+            color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-color {
+            color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-color {
+            color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-color {
+            color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-color {
+            color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-color {
+            color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-color {
+            color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-color {
+            color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-color {
+            color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-color {
+            color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-color {
+            color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-black-background-color {
+            background-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-background-color {
+            background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-background-color {
+            background-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-background-color {
+            background-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-background-color {
+            background-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-background-color {
+            background-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-background-color {
+            background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-background-color {
+            background-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-black-border-color {
+            border-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-border-color {
+            border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-border-color {
+            border-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-border-color {
+            border-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-border-color {
+            border-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-border-color {
+            border-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-border-color {
+            border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-border-color {
+            border-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+            background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+        }
+
+        .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+            background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+        }
+
+        .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+        }
+
+        .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+            background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+        }
+
+        .has-cool-to-warm-spectrum-gradient-background {
+            background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+        }
+
+        .has-blush-light-purple-gradient-background {
+            background: var(--wp--preset--gradient--blush-light-purple) !important;
+        }
+
+        .has-blush-bordeaux-gradient-background {
+            background: var(--wp--preset--gradient--blush-bordeaux) !important;
+        }
+
+        .has-luminous-dusk-gradient-background {
+            background: var(--wp--preset--gradient--luminous-dusk) !important;
+        }
+
+        .has-pale-ocean-gradient-background {
+            background: var(--wp--preset--gradient--pale-ocean) !important;
+        }
+
+        .has-electric-grass-gradient-background {
+            background: var(--wp--preset--gradient--electric-grass) !important;
+        }
+
+        .has-midnight-gradient-background {
+            background: var(--wp--preset--gradient--midnight) !important;
+        }
+
+        .has-small-font-size {
+            font-size: var(--wp--preset--font-size--small) !important;
+        }
+
+        .has-medium-font-size {
+            font-size: var(--wp--preset--font-size--medium) !important;
+        }
+
+        .has-large-font-size {
+            font-size: var(--wp--preset--font-size--large) !important;
+        }
+
+        .has-x-large-font-size {
+            font-size: var(--wp--preset--font-size--x-large) !important;
+        }
+
+        :where(.wp-block-post-template.is-layout-flex) {
+            gap: 1.25em;
+        }
+
+        :where(.wp-block-post-template.is-layout-grid) {
+            gap: 1.25em;
+        }
+
+        :where(.wp-block-columns.is-layout-flex) {
+            gap: 2em;
+        }
+
+        :where(.wp-block-columns.is-layout-grid) {
+            gap: 2em;
+        }
+
+        :root :where(.wp-block-pullquote) {
+            font-size: 1.5em;
+            line-height: 1.6;
+        }
+    </style>
+
+    <link rel='stylesheet' id='hello-elementor-css'
+        href='{{ asset('wp-content/themes/hello-elementor/style.min41fe.css') }}' media='all' />
+    <link rel='stylesheet' id='hello-elementor-theme-style-css'
+        href='{{ asset('wp-content/themes/hello-elementor/theme.min41fe.css') }}' media='all' />
+    <link rel='stylesheet' id='hello-elementor-header-footer-css'
+        href='{{ asset('wp-content/themes/hello-elementor/header-footer.min41fe.css') }}' media='all' />
+    <link rel='stylesheet' id='elementor-frontend-css'
+        href='{{ asset('wp-content/plugins/elementor/assets/css/frontend-lite.mina44d.css') }}' media='all' />
+    <link rel='stylesheet' id='elementor-post-23-css'
+        href='{{ asset('wp-content/uploads/elementor/css/post-23578b.css') }}' media='all' />
+    <link rel='stylesheet' id='elementor-icons-css'
+        href='{{ asset('wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.minfc13.css') }}'
+        media='all' />
+    <link rel='stylesheet' id='swiper-css'
+        href='{{ asset('wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min94a4.css') }}'
+        media='all' />
+    <link rel='stylesheet' id='elementor-post-2264-css'
+        href='{{ asset('wp-content/uploads/elementor/css/post-22648455.css') }}' media='all' />
+    <link rel='stylesheet' id='elementor-custom-widget-editor-css'
+        href='{{ asset('wp-content/plugins/elementor-custom-widgets/assets/css/editorb6a4.css') }}' media='all' />
+    <link rel='stylesheet' id='elementor-icons-shared-0-css'
+        href='{{ asset('wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min52d5.css') }}'
+        media='all' />
+    <link rel='stylesheet' id='elementor-icons-fa-solid-css'
+        href='{{ asset('wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min52d5.css') }}'
+        media='all' />
+
+    <script data-cookieconsent="ignore" data-cookiecategory="essential"
+        src="{{ asset('code.jquery.com/jquery-3.6.0.min.js') }}" id="jquery-js"></script>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script>
         function onRecaptchaSuccess(token) {
             // When reCAPTCHA is successfully completed, send the token to Livewire
             Livewire.find(document.querySelector('[wire\\:id]').getAttribute('wire:id')).set('gRecaptchaResponse', token);
         }
     </script>
-    {{-- @livewireStyles --}}
+    @livewireStyles
     @vite('resources/css/app.css')
-
-    @vite('resources/js/app.js')
 
     <style>
         [x-cloak] {
@@ -62,248 +661,214 @@
 
 </head>
 
-<body>
-    <header class="fixed-top">
-        <nav class="navbar navbar-expand-lg bg-custom py-2">
-            <div class="container">
-                <a class="navbar-brand d-flex flex-row align-items-center gap-2 justify-content-center"
-                    style="margin-right: 0;" href="/">
-                    <img src="{{ asset('homeassets/img/txwai.svg') }}" alt="Logo" width="90"
-                        class="d-inline-block align-text-top">
-                </a>
+<body
+    class="home page-template page-template-elementor_header_footer page page-id-2264 wp-custom-logo elementor-default elementor-template-full-width elementor-kit-23 elementor-page elementor-page-2264">
 
-                {{-- mobile --}}
-                <a href="{{ route('login') }}"
-                    class="btn btn-primary btn-lg w-50 text-white d-flex align-items-center justify-content-center d-lg-none d-sm-block float-end fw-bold text-uppercase"
-                    style="font-size: 13px;" type="button">Start Trading
-                </a>
-                <div class="gtranslate_wrapper d-lg-none d-sm-block"></div>
-                <div class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <i class="bi bi-list text-white fs-1"></i>
-                </div>
-                <div class="collapse navbar-collapse justify-content-start justify-content-lg-center d-hidden d-lg-block"
-                    id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item animated-border">
-                            <a class="nav-link active" aria-current="page" href="/">Home</a>
-                        </li>
-                        <li class="nav-item  animated-border">
-                            <a class="nav-link" href="/#features">Features</a>
-                        </li>
-                        <li class="nav-item  animated-border">
-                            <a class="nav-link" href="/#faq">FAQ</a>
-                        </li>
-                        <li class="nav-item  animated-border">
-                            <a class="nav-link" href="{{ route('login') }}">Login</a>
-                        </li>
-                        <li class="nav-item  animated-border">
-                            <a class="nav-link" href="{{ route('register') }}">Sign up</a>
-                        </li>
-                    </ul>
-                    <!-- <div class="header-buttons d-flex flex-row gap-3 d-lg-none d-sm-block justify-content-center">
-                        <a class="btn btn-outline-success text-white"href="/signup">Login</a>
-                        <a class="btn btn-success" href="/signup">Get started</a>
-                    </div> -->
-                </div>
-                {{-- mobile --}}
-                <!-- <div class="gtranslate_wrapper"></div> -->
-                <div class="gtranslate_wrapper d-none d-sm-none d-lg-block pe-3"></div>
-                <div class="header-buttons d-flex flex-row gap-3 d-none d-sm-none d-lg-block justify-content-center">
-
-                    <!-- <a class="btn btn-outline-success text-white"href="/signup">Login</a> -->
-                    <a class="btn btn-lg btn-primary fw-bold text-uppercase" href="{{ route('register') }}"
-                        type="button" style="font-size: 13px;">Start trading</a>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    {{ $slot }}
-
-    <footer class="bg-custom-dark py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5">
-                    <a class="navbar-brand d-flex flex-row align-items-center gap-2 justify-content-start"
-                        href="#">
-                        <img src="{{ asset('homeassets/img/txwai.svg') }}" alt="Logo" width="90"
-                            class="d-inline-block align-text-top">
-                    </a>
-                    <p class="py-3" style="font-size: 12px;">Txwai bot is suitable for both newbie traders and
-                        experienced traders, you don’t need to
-                        have any technical knowledge in cryptocurrency or forex trading to earn from Txwai. Anyone can
-                        earn
-                        from Txwai.</p>
-                    <div class="d-flex flex-row gap-4 text-white">
-                        <a style="font-size: 12px;" class="text-decoration-none text-white" aria-current="page"
-                            href="/find-us">Find Us</a>
-                        <a style="font-size: 12px;" class="text-decoration-none text-white" aria-current="page"
-                            href="/privacy">Privacy Policy</a>
-                        <a style="font-size: 12px;" class="text-decoration-none text-white" aria-current="page"
-                            href="/terms">Terms of use</a>
-                    </div>
-                </div>
-                <div class="col-lg-7">
-                    <div class="d-flex flex-row gap-2 justify-content-start py-5">
-                        <div>
-                            <div class="d-flex flex-row justify-content-center gap-2">
-                                <i class="bi bi-check-circle text-primary fs-3"></i>
-                                <div class="d-flex flex-column">
-                                    <h6 style="font-size: 12px;">FREE ACCOUNT</h5>
-                                        <p style="font-size: 12px;" class="text-secondary">NO CREDIT CARD REQUIRED</p>
-                                </div>
-                            </div>
-                            <a class="btn btn-lg btn-primary fw-bold w-100 text-uppercase mt-4"
-                                style="font-size: 13px;" href="{{ route('login') }}" type="button">Start
-                                Trading</a>
-                        </div>
-
-                        <div>
-                            <div class="d-flex flex-row justify-content-center gap-2">
-                                <i class="bi bi-shield-check text-primary fs-3"></i>
-                                <div class="d-flex flex-column">
-                                    <h6 style="font-size: 12px;">SAFE AND SECURE</h5>
-                                        <p style="font-size: 12px;" class="text-secondary">
-                                            ONLINE PAYMENT</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <h5 style="font-size: 13px;">Get the app</h5>
-                    <div class="d-flex flex-row gap-3 justify-content-start py-1">
-                        <a class="btn btn-outline-light bg-black btn-lg text-white fw-bold d-flex flex-column justify-content-center"
-                            href="https://play.google.com/store/apps/details?id=com.wnapp.id1771500996264">
-                            <img src="{{ asset('homeassets/img/google.svg') }}" width="100%" alt="">
-                        </a>
-                        <a class="btn btn-outline-light bg-black btn-lg text-white fw-bold d-flex flex-column justify-content-center"
-                            href="{{ route('home') }}">
-                            <img src="{{ asset('homeassets/img/apple.svg') }}" width="100%" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-12 mt-4">
-                    <p class="mb-4" style="font-size: 12px;"><i class="bi bi-geo-alt-fill"></i> Provincial House,
-                        New Walk, Leicester, United Kingdom, LE1 6TU</p>
-                    <p style="font-size: 12px;">Copyright © {{ now()->year }} Txwai, Inc.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <div data-elementor-type="wp-page" data-elementor-id="2264" class="elementor elementor-2264">
+        {{ $slot }}
+    </div>
 
     <script>
-        const togglePassword1 = document.querySelector('#togglePassword1');
-        const password1 = document.querySelector('#password1');
-        togglePassword1.addEventListener('click', () => {
-            // Toggle the type attribute using
-            // getAttribure() method
-            const type = password1
-                .getAttribute('type') === 'password' ?
-                'text' : 'password';
-            password1.setAttribute('type', type);
-            // Toggle the eye and bi-eye icon
-            this.classList.toggle('bi-eye-fill');
-        });
-
-        const togglePassword2 = document.querySelector('#togglePassword2');
-        const password2 = document.querySelector('#password2');
-        togglePassword2.addEventListener('click', () => {
-            // Toggle the type attribute using
-            // getAttribure() method
-            const type = password2
-                .getAttribute('type') === 'password' ?
-                'text' : 'password';
-            password2.setAttribute('type', type);
-            // Toggle the eye and bi-eye icon
-            this.classList.toggle('bi-eye-fill');
-        });
+        document.getElementById("year").innerHTML = new Date().getFullYear();
     </script>
 
-    <!-- <div class="gtranslate_wrapper"></div>
-    <script>
-        window.gtranslateSettings = {
-            "default_language": "en",
-            "wrapper_selector": ".gtranslate_wrapper"
-        }
+    <link rel='stylesheet' id='e-animations-css'
+        href="{{ asset('wp-content/plugins/elementor/assets/lib/animations/animations.mina44d.css') }}"
+        media='all' />
+    <script data-cookieconsent="ignore" data-cookiecategory="essential"
+        src="{{ asset('maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js') }}" id="scrollspy-js"></script>
+    <script data-cookieconsent="ignore" data-cookiecategory="essential"
+        src="{{ asset('unpkg.com/typeit@8.7.1/dist/index.umd.js') }}" id="typeit-js"></script>
+    <script data-cookieconsent="ignore" data-cookiecategory="essential"
+        src="{{ asset('cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min4819.js') }}" id="select2-js"></script>
+    <script data-cookieconsent="ignore" data-cookiecategory="essential"
+        src="{{ asset('cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.minb6a4.js') }}" id="gsap-js"></script>
+    <script data-cookieconsent="ignore" data-cookiecategory="essential"
+        src="{{ asset('cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.minb6a4.js') }}" id="scroll-trigger-js">
     </script>
-    <script src="https://cdn.gtranslate.net/widgets/latest/dwf.js" defer></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+    <script src="{{ asset('cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/CSSRulePlugin.minb6a4.js') }}"
+        id="cssrule-plugin-js"></script>
+    <script data-cookieconsent="ignore" data-cookiecategory="essential"
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/SplitText.min.js') }}" id="split-text-js"></script>
+    <script data-cookieconsent="ignore" data-cookiecategory="essential"
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollSmoother.min.js') }}" id="scroll-smoother-js">
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+    <script data-cookieconsent="ignore" data-cookiecategory="essential"
+        src="{{ asset('cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.minb6a4.js') }}" id="prism-js"></script>
+    <script data-cookieconsent="ignore" data-cookiecategory="essential"
+        src="{{ asset('cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-python.minb11e.js') }}"
+        id="prism-python-js"></script>
+    <script data-cookieconsent="ignore" data-cookiecategory="essential"
+        src="{{ asset('wp-content/themes/tradelocker-child/js/animate-typed120.js') }}" id="animate-type-js"></script>
+    <script src="{{ asset('wp-content/themes/tradelocker-child/js/accordionda59.js') }}" async defer
+        data-cookieconsent="ignore" data-cookiecategory="essential"></script>
+    <script data-cookieconsent="ignore" data-cookiecategory="essential"
+        src="{{ asset('wp-content/themes/tradelocker-child/js/anchoring32e8.js') }}" id="anchoring-js-js"></script>
+    <script src="{{ asset('wp-content/themes/tradelocker-child/js/utils6798.js') }}" id="utils-js-js"></script>
+    <script src="{{ asset('wp-content/themes/tradelocker-child/js/gsap-activations290c.js') }}" id="gsap-activations-js">
     </script>
-
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-
-    <script>
-        $("[id^=login-btn]").each(function() {
-            $(this).click(function() {
-                let stateObj = {
-                    id: "100"
-                };
-
-                window.history.replaceState(stateObj, "Page", "{{ route('login') }}");
-            });
-        });
-
-        $("[id^=register-btn]").each(function() {
-            $(this).click(function() {
-                let stateObj = {
-                    id: "100"
-                };
-
-                window.history.replaceState(stateObj, "Page", "{{ route('register') }}");
-            });
-        });
-
-        $(document).ready(function() {
-            $('.gt_switcher-popup').find('span').hide();
-        })
+    <script src="{{ asset('wp-content/themes/tradelocker-child/js/marqueec2dd.js') }}" id="marquee-activations-js">
     </script>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
-            spaceBetween: 20,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
+    <script src="{{ asset('wp-content/themes/tradelocker-child/js/switch-tabs0ab2.js') }}" async defer
+        data-cookieconsent="ignore" data-cookiecategory="essential"></script>
+    <script src="{{ asset('wp-content/themes/tradelocker-child/js/platform-link69a7.js') }}" async defer
+        data-cookieconsent="ignore" data-cookiecategory="essential"></script>
+    <script data-cookieconsent="ignore" data-cookiecategory="essential"
+        src="{{ asset('wp-content/themes/tradelocker-child/js/animations580a.js') }}" id="animations-js"></script>
+    <script id="ajax-search-js-extra">
+        var ajax_obj = {
+            "ajaxurl": "https:\/\/tradelocker.com\/wp-admin\/admin-ajax.php"
+        };
+    </script>
+    <script src="{{ asset('wp-content/themes/tradelocker-child/js/ajax-search544d.js') }}" id="ajax-search-js"></script>
+    <script id="leadin-script-loader-js-js-extra">
+        var leadin_wordpress = {
+            "userRole": "visitor",
+            "pageType": "home",
+            "leadinPluginVersion": "11.3.6"
+        };
+    </script>
+    <script src="{{ asset('js-eu1.hs-scripts.com/1452689439a4a.js') }}" id="leadin-script-loader-js-js"></script>
+    <script src="{{ asset('wp-content/plugins/maintainnance-plugin/js/campaign-bara20d.js') }}" id="campaign-bar-js">
+    </script>
+    <script src="{{ asset('cdn.jsdelivr.net/npm/js-cookie@2.2.1/src/js.cookie.min77e6.js') }}" id="js-cookie-js"></script>
+    <script src="{{ asset('wp-content/plugins/partner-portal-plugin/js/fetchCookies0b99.js') }}" id="fetchCookies-js">
+    </script>
+    <script src="{{ asset('wp-content/plugins/partners-plugin/js/searchfiltere9db.js') }}" id="search-filter-js"></script>
+    <script src="{{ asset('wp-content/themes/tradelocker-child/js/toggle-projects7ae3.js') }}" id="toggle-projects-js">
+    </script>
+    <script src="{{ asset('wp-content/themes/hello-elementor/assets/js/hello-frontend.min41fe.js') }}"
+        id="hello-theme-frontend-js"></script>
+    <script src="{{ asset('wp-content/plugins/elementor/assets/js/webpack.runtime.mina44d.js') }}"
+        id="elementor-webpack-runtime-js"></script>
+    <script src="{{ asset('wp-content/plugins/elementor/assets/js/frontend-modules.mina44d.js') }}"
+        id="elementor-frontend-modules-js"></script>
+    <script src="{{ asset('wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min05da.js') }}"
+        id="elementor-waypoints-js"></script>
+    <script src="{{ asset('wp-includes/js/jquery/ui/core.minb37e.js') }}" id="jquery-ui-core-js"></script>
+    <script id="elementor-frontend-js-before">
+        var elementorFrontendConfig = {
+            "environmentMode": {
+                "edit": false,
+                "wpPreview": false,
+                "isScriptDebug": false
             },
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
+            "i18n": {
+                "shareOnFacebook": "Share on Facebook",
+                "shareOnTwitter": "Share on Twitter",
+                "pinIt": "Pin it",
+                "download": "Download",
+                "downloadImage": "Download image",
+                "fullscreen": "Fullscreen",
+                "zoom": "Zoom",
+                "share": "Share",
+                "playVideo": "Play Video",
+                "previous": "Previous",
+                "next": "Next",
+                "close": "Close"
             },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+            "is_rtl": false,
+            "breakpoints": {
+                "xs": 0,
+                "sm": 480,
+                "md": 768,
+                "lg": 1025,
+                "xl": 1440,
+                "xxl": 1600
             },
-            breakpoints: {
-                "@0.00": {
-                    slidesPerView: 1,
-                    spaceBetween: 20,
-                },
-                "@0.75": {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                },
-                "@1.00": {
-                    slidesPerView: 3,
-                    spaceBetween: 20,
-                },
-                "@1.50": {
-                    slidesPerView: 3,
-                    spaceBetween: 20,
-                },
+            "responsive": {
+                "breakpoints": {
+                    "mobile": {
+                        "label": "Mobile Portrait",
+                        "value": 767,
+                        "default_value": 767,
+                        "direction": "max",
+                        "is_enabled": true
+                    },
+                    "mobile_extra": {
+                        "label": "Mobile Landscape",
+                        "value": 880,
+                        "default_value": 880,
+                        "direction": "max",
+                        "is_enabled": false
+                    },
+                    "tablet": {
+                        "label": "Tablet Portrait",
+                        "value": 1024,
+                        "default_value": 1024,
+                        "direction": "max",
+                        "is_enabled": true
+                    },
+                    "tablet_extra": {
+                        "label": "Tablet Landscape",
+                        "value": 1200,
+                        "default_value": 1200,
+                        "direction": "max",
+                        "is_enabled": false
+                    },
+                    "laptop": {
+                        "label": "Laptop",
+                        "value": 1366,
+                        "default_value": 1366,
+                        "direction": "max",
+                        "is_enabled": false
+                    },
+                    "widescreen": {
+                        "label": "Widescreen",
+                        "value": 2400,
+                        "default_value": 2400,
+                        "direction": "min",
+                        "is_enabled": false
+                    }
+                }
             },
-        });
+            "version": "3.13.4",
+            "is_static": false,
+            "experimentalFeatures": {
+                "e_dom_optimization": true,
+                "e_optimized_assets_loading": true,
+                "e_optimized_css_loading": true,
+                "a11y_improvements": true,
+                "additional_custom_breakpoints": true,
+                "container": true,
+                "e_swiper_latest": true,
+                "hello-theme-header-footer": true,
+                "landing-pages": true
+            },
+            "urls": {
+                "assets": "https:\/\/tradelocker.com\/wp-content\/plugins\/elementor\/assets\/"
+            },
+            "swiperClass": "swiper",
+            "settings": {
+                "page": [],
+                "editorPreferences": []
+            },
+            "kit": {
+                "body_background_background": "classic",
+                "active_breakpoints": ["viewport_mobile", "viewport_tablet"],
+                "global_image_lightbox": "yes",
+                "lightbox_enable_counter": "yes",
+                "lightbox_enable_fullscreen": "yes",
+                "lightbox_enable_zoom": "yes",
+                "lightbox_enable_share": "yes",
+                "lightbox_title_src": "title",
+                "lightbox_description_src": "description",
+                "hello_header_logo_type": "logo",
+                "hello_header_menu_layout": "horizontal",
+                "hello_footer_logo_type": "logo"
+            },
+            "post": {
+                "id": 2264,
+                "title": "Next-Gen%20Forex%20Trading%20Platform%20-%20TradeLocker",
+                "excerpt": "",
+                "featuredImage": "https:\/\/tradelocker.com\/wp-content\/uploads\/2025\/03\/cover-1-1-1024x574.jpg"
+            }
+        };
+    </script>
+    <script src="{{ asset('wp-content/plugins/elementor/assets/js/frontend.mina44d.js') }}" id="elementor-frontend-js">
     </script>
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script>
         window.gtranslateSettings = {
             "default_language": "en",
@@ -313,68 +878,44 @@
             "flag_style": "3d"
         }
     </script>
+
+    <script>
+        async function forceClearCache() {
+            if ('serviceWorker' in navigator) {
+
+                // 1. Get all cache names
+                const cacheNames = await caches.keys();
+
+                // 2. Delete all caches
+                await Promise.all(
+                    cacheNames.map(name => {
+                        console.log(`Deleting cache: ${name}`);
+                        return caches.delete(name);
+                    })
+                );
+
+                // 3. Unregister the Service Worker (Optional but recommended for a hard reset)
+                const registrations = await navigator.serviceWorker.getRegistrations();
+                for (let registration of registrations) {
+                    await registration.unregister();
+                }
+
+                // 4. Reload the page to grab fresh assets
+                window.location.reload(true);
+            }
+        }
+    </script>
     <script src="https://cdn.gtranslate.net/widgets/latest/popup.js" defer></script>
-    @yield('footer')
-
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-        var Tawk_API = Tawk_API || {},
-            Tawk_LoadStart = new Date();
-        (function() {
-            var s1 = document.createElement("script"),
-                s0 = document.getElementsByTagName("script")[0];
-            s1.async = true;
-            s1.src = 'https://embed.tawk.to/69a15fb66358061c35fc82f1/1jif5rol4';
-            s1.charset = 'UTF-8';
-            s1.setAttribute('crossorigin', '*');
-            s0.parentNode.insertBefore(s1, s0);
-        })();
-    </script>
-    <!--End of Tawk.to Script-->
-
     <script>
-        document.getElementById('loginForm').addEventListener('submit', function(e) {
-            const loginButton = document.getElementById('loginBtn');
-
-            // Disable button immediately on submit
-            loginButton.disabled = true;
-            loginButton.classList.remove('btn-primary', 'btn', 'text-white');
-            loginButton.classList.add('btn-disabled', 'text-black');
-        });
-
-        // Check for errors after page load
+        // Wait for the DOM to be fully loaded
         document.addEventListener('DOMContentLoaded', function() {
-            const loginButton = document.getElementById('loginBtn');
-
-            // Check if there are any errors (Laravel adds .errors to the session)
-            @if ($errors->any())
-                loginButton.disabled = false;
-                loginButton.classList.remove('btn-disabled', 'text-black');
-                loginButton.classList.add('btn-primary', 'btn', 'text-white');
-            @endif
-        });
-    </script>
-
-    <script>
-        document.getElementById('registerForm').addEventListener('submit', function(e) {
-            const registerButton = document.getElementById('registerBtn');
-
-            // Disable button immediately on submit
-            registerButton.disabled = true;
-            registerButton.classList.remove('btn-primary', 'btn', 'text-white');
-            registerButton.classList.add('btn-disabled', 'text-black');
-        });
-
-        // Check for errors after page load
-        document.addEventListener('DOMContentLoaded', function() {
-            const registerButton = document.getElementById('registerBtn');
-
-            // Check if there are any errors (Laravel adds .errors to the session)
-            @if ($errors->any())
-                registerButton.disabled = false;
-                registerButton.classList.remove('btn-disabled', 'text-black');
-                registerButton.classList.add('btn-primary', 'btn', 'text-white');
-            @endif
+            // Select all elements with class 'gt_switcher-popup'
+            document.querySelectorAll('.gt_switcher-popup').forEach(function(el) {
+                // Find all span children and hide them
+                el.querySelectorAll('span').forEach(function(span) {
+                    span.style.display = 'none';
+                });
+            });
         });
     </script>
     @livewireScripts
